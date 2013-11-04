@@ -8,7 +8,7 @@ class MergedRSS {
 	private $myCacheTime = null;
 
 	// create our Merged RSS Feed
-	public function __construct($feeds = null, $channel_title = null, $channel_link = null, $channel_description = null, $channel_pubdate = null, $cache_time_in_seconds = 86400) {
+	public function __construct($feeds = null, $channel_title = null, $channel_link = null, $channel_description = null, $channel_pubdate = null, $cache_time_in_seconds = 3600) {
 		// set variables
 		$this->myTitle = $channel_title;
 		$this->myLink = $channel_link;
