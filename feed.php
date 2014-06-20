@@ -1,6 +1,12 @@
 <?php
 include_once("mergedrss.php");
 
+if ( ! empty($_GET["category"]) ) {
+	$category = $_GET["category"];
+} else {
+	$category = "blog";
+}
+
 $communities = "http://www.weimarnetz.de/ffmap/ffMap.json";
 
 //load combined api file
@@ -8,19 +14,31 @@ $api = file_get_contents($communities);
 $json = json_decode($api, true);
 $geofeatures = $json['features'];
 
-// place our feeds in an array
-$feeds = array(
-        array('http://blog.freifunk.net/rss.xml','blog.freifunk.net','http://blog.freifunk.net'),
-        array('http://freifunkstattangst.de/feed/', 'freifunk statt Angst','http://freifunkstattangst.de'),
-	array('http://radio.freifunk-bno.de/freifunk_radio_feedfeed.xml', 'Freifunk Radio', 'http://wiki.freifunk.net/Freifunk.radio')
-);
+// place our feeds in an array for categories with static feeds
+switch ($category) {
+	case "blog":
+		$feeds = array(
+		        array('http://blog.freifunk.net/rss.xml','blog.freifunk.net','http://blog.freifunk.net'),
+		        array('http://freifunkstattangst.de/feed/', 'freifunk statt Angst','http://freifunkstattangst.de'),
+			array('http://radio.freifunk-bno.de/freifunk_radio_feedfeed.xml', 'Freifunk Radio', 'http://wiki.freifunk.net/Freifunk.radio')
+		);
+		break;
+	case "podcast":
+		$feeds = array(
+			array('http://radio.freifunk-bno.de/freifunk_radio_feedfeed.xml', 'Freifunk Radio', 'http://wiki.freifunk.net/Freifunk.radio')
+		);
+		break;
+	default:
+		$feeds = array();
+}
+		
 
 foreach($geofeatures as $feature)
 {
 	if ( $feature['properties']['feeds'] != "" ) {
 		foreach($feature['properties']['feeds'] as $feed )
 		{
-			if ($feed['category'] == "blog") {
+			if ($feed['category'] == $category) {
 				array_push($feeds, array($feed['url'],$feature['properties']['name'], $feature['properties']['url']))  ;
 			}
 		}
