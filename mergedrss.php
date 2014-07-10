@@ -6,15 +6,17 @@ class MergedRSS {
 	private $myDescription = null;
 	private $myPubDate = null;
 	private $myCacheTime = null;
+	private $fetch_timeout = null; //timeout for fetching urls in seconds (floating point)
 
 	// create our Merged RSS Feed
-	public function __construct($feeds = null, $channel_title = null, $channel_link = null, $channel_description = null, $channel_pubdate = null, $cache_time_in_seconds = 3600) {
+	public function __construct($feeds = null, $channel_title = null, $channel_link = null, $channel_description = null, $channel_pubdate = null, $cache_time_in_seconds = 3600, $fetch_timeout = '10.0') {
 		// set variables
 		$this->myTitle = $channel_title;
 		$this->myLink = $channel_link;
 		$this->myDescription = $channel_description;
 		$this->myPubDate = $channel_pubdate;
 		$this->myCacheTime = $cache_time_in_seconds;
+		$this->fetch_timeout = $fetch_timeout;
 
 		// initialize feed variable
 		$this->myFeeds = array();
@@ -141,7 +143,13 @@ class MergedRSS {
 		try {
 			//set user agent, i.e. facebook.com doesn't deliver feeds to unknown browsers
 			ini_set('user_agent', 'Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10.5; en-US; rv:1.9.1.3) Gecko/20090824 Firefox/3.5.3');
-			$sxe = new SimpleXMLElement($url, null, true);
+			$fp = fopen($url, 'r', false , stream_context_create(array('http' => array('timeout', $this->fetch_timeout))));
+
+			if ($fp) {
+				$sxe = simplexml_load_string(stream_get_contents($fp));
+			} else {
+				$sxe = false;
+			}
 			return $sxe;
 		} catch (Exception $e) {
 			return null;
