@@ -35,10 +35,10 @@ switch ($category) {
 
 foreach($geofeatures as $feature)
 {
-	if ( $feature['properties']['feeds'] != "" ) {
+	if ( ! empty($feature['properties']['feeds'] ) ) {
 		foreach($feature['properties']['feeds'] as $feed )
 		{
-			if ($feed['category'] == $category) {
+			if ( ! empty($feed['category']) && $feed['category'] == $category) {
 				array_push($feeds, array($feed['url'],$feature['properties']['name'], $feature['properties']['url']))  ;
 			}
 		}

@@ -9,7 +9,7 @@ class MergedRSS {
 	private $fetch_timeout = null; //timeout for fetching urls in seconds (floating point)
 
 	// create our Merged RSS Feed
-	public function __construct($feeds = null, $channel_title = null, $channel_link = null, $channel_description = null, $channel_pubdate = null, $cache_time_in_seconds = 3600, $fetch_timeout = '10.0') {
+	public function __construct($feeds = null, $channel_title = null, $channel_link = null, $channel_description = null, $channel_pubdate = null, $cache_time_in_seconds = 3600, $fetch_timeout = '3.0') {
 		// set variables
 		$this->myTitle = $channel_title;
 		$this->myLink = $channel_link;
