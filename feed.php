@@ -18,8 +18,8 @@ $geofeatures = $json['features'];
 switch ($category) {
 	case "blog":
 		$feeds = array(
-		        array('http://blog.freifunk.net/rss.xml','blog.freifunk.net','http://blog.freifunk.net'),
-		        array('http://freifunkstattangst.de/feed/', 'freifunk statt Angst','http://freifunkstattangst.de'),
+			array('http://blog.freifunk.net/rss.xml','blog.freifunk.net','http://blog.freifunk.net'),
+			array('http://freifunkstattangst.de/feed/', 'freifunk statt Angst','http://freifunkstattangst.de'),
 			array('http://radio.freifunk-bno.de/freifunk_radio_feedfeed.xml', 'Freifunk Radio', 'http://wiki.freifunk.net/Freifunk.radio')
 		);
 		break;
@@ -54,7 +54,7 @@ header("Content-type: text/xml");
 $feed_date = date("r", mktime(10,0,0,9,8,2010));
 
 // Create new MergedRSS object with desired parameters
-$MergedRSS = new MergedRSS($feeds, "Freifunk Community Feeds", "http://www.freifunk.net/", "This the merged RSS feed of RSS feeds of our community", $feed_date);
+$MergedRSS = new MergedRSS($feeds, "Freifunk Community Feeds", "http://www.freifunk.net/", "This the merged RSS feed of RSS feeds of our community", "http://freifunk.net/wp-content/themes/freifunk_base/img/logo_freifunknet.png", $feed_date);
 
 //Export the first 10 items to screen
 $MergedRSS->export(false, true, 50);

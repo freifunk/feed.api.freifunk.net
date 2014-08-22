@@ -4,16 +4,18 @@ class MergedRSS {
 	private $myTitle = null;
 	private $myLink = null;
 	private $myDescription = null;
+	private $myImage = null;
 	private $myPubDate = null;
 	private $myCacheTime = null;
 	private $fetch_timeout = null; //timeout for fetching urls in seconds (floating point)
 
 	// create our Merged RSS Feed
-	public function __construct($feeds = null, $channel_title = null, $channel_link = null, $channel_description = null, $channel_pubdate = null, $cache_time_in_seconds = 3600, $fetch_timeout = '3.0') {
+	public function __construct($feeds = null, $channel_title = null, $channel_link = null, $channel_description = null, $channel_image = null, $channel_pubdate = null, $cache_time_in_seconds = 3600, $fetch_timeout = '3.0') {
 		// set variables
 		$this->myTitle = $channel_title;
 		$this->myLink = $channel_link;
 		$this->myDescription = $channel_description;
+		$this->myImage = $channel_image;
 		$this->myPubDate = $channel_pubdate;
 		$this->myCacheTime = $cache_time_in_seconds;
 		$this->fetch_timeout = $fetch_timeout;
@@ -95,6 +97,7 @@ class MergedRSS {
 		$xml .= "\t<atom:link href=\"http://".$_SERVER['HTTP_HOST'].$_SERVER['PHP_SELF']."\" rel=\"self\" type=\"application/rss+xml\" />\n";
 		if (isset($this->myLink)) { $xml .= "\t<link>".$this->myLink."</link>\n"; }
 		if (isset($this->myDescription)) { $xml .= "\t<description>".$this->myDescription."</description>\n"; }
+		if (isset($this->myImage)) { $xml .= "\t<itunes:image href=\"".$this->myImage."\" />\n"; }
 		if (isset($this->myPubDate)) { $xml .= "\t<pubDate>".$this->myPubDate."</pubDate>\n"; }
 
 		// if there are any items to add to the feed, let's do it
