@@ -81,6 +81,11 @@ class MergedRSS {
 					$item->title = html_entity_decode($item->title, ENT_QUOTES,  'UTF-8');
 					$source = $item->addChild('source', '' . $feed_array[1]);
 					$source->addAttribute('url', $feed_array[2]);
+
+					$ns = $item->getNamespaces(true);
+					$dc = $item->children($ns['dc']);
+					$dc->creator = sprintf("%s (%s)", $dc->creator, $feed_array[2]);
+
 					$items[] = $item;
 				}
 			}
