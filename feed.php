@@ -7,7 +7,7 @@ if ( ! empty($_GET["category"]) ) {
 	$category = "blog";
 }
 
-$communities = "http://www.weimarnetz.de/ffmap/ffMap.json";
+$communities = "http://freifunk.net/map/ffGeoJson.json";
 
 //load combined api file
 $api = file_get_contents($communities);
