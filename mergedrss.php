@@ -9,7 +9,7 @@ class MergedRSS {
 	private $fetch_timeout = null; //timeout for fetching urls in seconds (floating point)
 
 	// create our Merged RSS Feed
-	public function __construct($feeds = null, $channel_title = null, $channel_link = null, $channel_description = null, $channel_pubdate = null, $cache_time_in_seconds = 3600, $fetch_timeout = '3.0') {
+	public function __construct($feeds = null, $channel_title = null, $channel_link = null, $channel_description = null, $channel_pubdate = null, $cache_time_in_seconds = 3600, $fetch_timeout = '1.2') {
 		// set variables
 		$this->myTitle = $channel_title;
 		$this->myLink = $channel_link;
@@ -142,8 +142,8 @@ class MergedRSS {
 		// Create new SimpleXMLElement instance
 		try {
 			//set user agent, i.e. facebook.com doesn't deliver feeds to unknown browsers
-			ini_set('user_agent', 'Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10.5; en-US; rv:1.9.1.3) Gecko/20090824 Firefox/3.5.3');
-			$fp = fopen($url, 'r', false , stream_context_create(array('http' => array('timeout', $this->fetch_timeout))));
+			ini_set('user_agent', 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2049.0 Safari/537.36');
+			$fp = fopen($url, 'r', false , stream_context_create(array('http' => array('timeout' => $this->fetch_timeout))));
 
 			if ($fp) {
 				$sxe = simplexml_load_string(stream_get_contents($fp));
