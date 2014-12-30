@@ -7,6 +7,12 @@ if ( ! empty($_GET["category"]) ) {
 	$category = "blog";
 }
 
+if ( (! empty($_GET["items"]) ) && is_numeric($_GET["items"]) ) {
+  $items = $_GET["items"];
+} else {
+  $items = 15;
+}
+
 $communities = "http://freifunk.net/map/ffGeoJson.json";
 
 //load combined api file
@@ -57,5 +63,5 @@ $feed_date = date("r", mktime(10,0,0,9,8,2010));
 $MergedRSS = new MergedRSS($feeds, "Freifunk Community Feeds", "http://www.freifunk.net/", "This the merged RSS feed of RSS feeds of our community", $feed_date);
 
 //Export the first 10 items to screen
-$MergedRSS->export(false, true, 50);
+$MergedRSS->export(false, true, $items);
 
