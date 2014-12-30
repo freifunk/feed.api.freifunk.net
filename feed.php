@@ -31,7 +31,8 @@ switch ($category) {
 		break;
 	case "podcast":
 		$feeds = array(
-			array('http://radio.freifunk-bno.de/freifunk_radio_feedfeed.xml', 'Freifunk Radio', 'http://wiki.freifunk.net/Freifunk.radio')
+			array('http://radio.freifunk-bno.de/freifunk_radio_feedfeed.xml', 'Freifunk Radio', 'http://wiki.freifunk.net/Freifunk.radio'),
+			array('http://rss.freifunk.net/tags/podcast.rss', 'Freifunk - zusammengetragene Audiobeiträge', 'http://rss.freifunk.net/tags/podcast')
 		);
 		break;
 	default:
