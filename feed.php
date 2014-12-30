@@ -10,7 +10,7 @@ if ( ! empty($_GET["category"]) ) {
 if ( (! empty($_GET["items"]) ) && is_numeric($_GET["items"]) ) {
   $items = $_GET["items"];
 } else {
-  $items = 15;
+  $items = 18;
 }
 
 $communities = "http://freifunk.net/map/ffGeoJson.json";
