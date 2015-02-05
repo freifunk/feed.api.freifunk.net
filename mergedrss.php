@@ -39,6 +39,7 @@ class MergedRSS {
 		// loop through each feed
 		foreach ($this->myFeeds as $feed_array) {
 			$feed_url = $feed_array[0];
+			$feed_title = trim($feed_array[1]);
 			// determine my cache file name.  for now i assume they're all kept in a file called "cache"
 			$cache_file = "cache/" . $this->__create_feed_key($feed_url);
 
@@ -78,7 +79,7 @@ class MergedRSS {
 						continue;
 					}
 					//convert title to utf-8 (i.e. from facebook feeds)
-					$item->title = html_entity_decode($item->title, ENT_QUOTES,  'UTF-8');
+					$item->title = '[' . $feed_title . '] ' . html_entity_decode($item->title, ENT_QUOTES,  'UTF-8');
 					$source = $item->addChild('source', '' . $feed_array[1]);
 					$source->addAttribute('url', $feed_array[2]);
 					$items[] = $item;
@@ -162,4 +163,3 @@ class MergedRSS {
 	}
 
 }
-

@@ -1,4 +1,5 @@
 <?php
+error_reporting(E_ERROR);
 include_once("mergedrss.php");
 
 if ( ! empty($_GET["category"]) ) {
@@ -18,8 +19,8 @@ $geofeatures = $json['features'];
 switch ($category) {
 	case "blog":
 		$feeds = array(
-		        array('http://blog.freifunk.net/rss.xml','blog.freifunk.net','http://blog.freifunk.net'),
-		        array('http://freifunkstattangst.de/feed/', 'freifunk statt Angst','http://freifunkstattangst.de'),
+			array('http://blog.freifunk.net/rss.xml','blog.freifunk.net','http://blog.freifunk.net'),
+			array('http://freifunkstattangst.de/feed/', 'freifunk statt Angst','http://freifunkstattangst.de'),
 			array('http://radio.freifunk-bno.de/freifunk_radio_feedfeed.xml', 'Freifunk Radio', 'http://wiki.freifunk.net/Freifunk.radio')
 		);
 		break;
@@ -58,4 +59,3 @@ $MergedRSS = new MergedRSS($feeds, "Freifunk Community Feeds", "http://www.freif
 
 //Export the first 10 items to screen
 $MergedRSS->export(false, true, 50);
-
