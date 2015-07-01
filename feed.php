@@ -13,7 +13,9 @@ if ( (! empty($_GET["items"]) ) && is_numeric($_GET["items"]) ) {
   $items = 18;
 }
 
-$communities = "http://freifunk.net/map/ffGeoJson.json";
+$configs = file_get_contents("config.json");
+$configs = json_decode($configs, true);
+$communities = $configs['ffGeoJsonUrl'];
 
 //load combined api file
 $api = file_get_contents($communities);
