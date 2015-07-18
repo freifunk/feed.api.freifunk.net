@@ -16,6 +16,7 @@ if ( (! empty($_GET["items"]) ) && is_numeric($_GET["items"]) ) {
 $configs = file_get_contents("config.json");
 $configs = json_decode($configs, true);
 $communities = $configs['ffGeoJsonUrl'];
+$urls = array();
 
 //load combined api file
 $api = file_get_contents($communities);
@@ -47,8 +48,9 @@ foreach($geofeatures as $feature)
 	if ( ! empty($feature['properties']['feeds'] ) ) {
 		foreach($feature['properties']['feeds'] as $feed )
 		{
-			if ( ! empty($feed['category']) && $feed['category'] == $category && !empty($feed['type']) && $feed['type'] == "rss" ) {
+			if ( ! array_key_exists($feature['properties']['url'], $urls) && ! empty($feed['category']) && $feed['category'] == $category && !empty($feed['type']) && $feed['type'] == "rss" ) {
 				$feeds[$feature['properties']['shortname']] = array($feed['url'],$feature['properties']['name'], $feature['properties']['url']);
+				$urls[$feature['properties']['url']] = "1";
 			}
 		}
 	}
