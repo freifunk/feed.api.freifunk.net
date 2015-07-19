@@ -7,15 +7,10 @@ if ( ! empty($_GET["category"]) ) {
 	$category = "blog";
 }
 
-if ( (! empty($_GET["items"]) ) && is_numeric($_GET["items"]) ) {
-  $items = $_GET["items"];
-} else {
-  $items = 18;
-}
-
 $configs = file_get_contents("config.json");
 $configs = json_decode($configs, true);
 $communities = $configs['ffGeoJsonUrl'];
+$limit = $configs['defaultLimit'];
 $urls = array();
 
 //load combined api file
@@ -65,6 +60,6 @@ $feed_date = date("r", mktime(10,0,0,9,8,2010));
 $MergedRSS = new MergedRSS($feeds, "Freifunk Community Feeds", "http://www.freifunk.net/", "This the merged RSS feed of RSS feeds of our community", "http://wiki.freifunk.net/images/7/78/175x170_freifunknet.png", $feed_date);
 
 //Export the first 10 items to screen
-$result = $MergedRSS->export(true, false, (array_key_exists('limit', $_GET) ? $_GET['limit'] : 1), (array_key_exists('source', $_GET) ? $_GET['source'] : 'all'));
+$result = $MergedRSS->export(true, false, (array_key_exists('limit', $_GET) ? $_GET['limit'] : $limit), (array_key_exists('source', $_GET) ? $_GET['source'] : 'all'));
 
 JsonpHelper::outputXML($result);
