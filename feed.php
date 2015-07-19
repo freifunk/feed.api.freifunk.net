@@ -11,6 +11,7 @@ $configs = file_get_contents("config.json");
 $configs = json_decode($configs, true);
 $communities = $configs['ffGeoJsonUrl'];
 $limit = $configs['defaultLimit'];
+$feeds = array();
 $urls = array();
 
 //load combined api file
@@ -18,26 +19,14 @@ $api = file_get_contents($communities);
 $json = json_decode($api, true);
 $geofeatures = $json['features'];
 
-// place our feeds in an array for categories with static feeds
-switch ($category) {
-	case "blog":
-		$feeds = array(
-			array('http://blog.freifunk.net/rss.xml','blog.freifunk.net','http://blog.freifunk.net'),
-			array('http://freifunkstattangst.de/feed/', 'freifunk statt Angst','http://freifunkstattangst.de'),
-			array('http://radio.freifunk-bno.de/freifunk_radio_feedfeed.xml', 'Freifunk Radio', 'http://wiki.freifunk.net/Freifunk.radio')
-		);
-		break;
-	case "podcast":
-		$feeds = array(
-			array('http://radio.freifunk-bno.de/freifunk_radio_feedfeed.xml', 'Freifunk Radio', 'http://wiki.freifunk.net/Freifunk.radio'),
-			array('http://rss.freifunk.net/tags/podcast.rss', 'Freifunk - zusammengetragene Audiobeiträge', 'http://rss.freifunk.net/tags/podcast')
-		);
-		break;
-	default:
-		$feeds = array();
+// get additional feeds from config
+foreach($configs['additionalFeeds'] as $additionalFeed) {
+	if ($additionalFeed['category'] == $category) {
+		$feeds[$additionalFeed['name']] = array($additionalFeed['url'], $additionalFeed['name'], $additionalFeed['homepage']);
+	}
 }
-		
 
+// get feeds from API
 foreach($geofeatures as $feature)
 {
 	if ( ! empty($feature['properties']['feeds'] ) ) {
