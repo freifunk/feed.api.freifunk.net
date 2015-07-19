@@ -40,7 +40,7 @@ class MergedRSS {
 
 		// loop through each feed
 		foreach ($this->myFeeds as $key => $feed_array) {
-			if ($community !== 'all' && $key !== $community) {
+			if ($community !== 'all' && ! in_array($community, $feed_array[3])) {
 				continue;
 			}
 
