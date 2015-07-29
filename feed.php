@@ -34,7 +34,7 @@ foreach($geofeatures as $feature)
 	if ( ! empty($feature['properties']['feeds'] ) ) {
 		foreach($feature['properties']['feeds'] as $feed )
 		{
-			if ( ! empty($feed['category']) && $feed['category'] == $category && !empty($feed['type']) && $feed['type'] == "rss" ) {
+			if ( ! empty($feed['category']) && $feed['category'] == $category && !empty($feed['type']) && in_array($feed['type'], array("rss", "atom")) ) {
 				if ( array_key_exists($feed['url'], $feeds) ) {
 					array_push($feeds[$feed['url']][3], $feature['properties']['shortname']);
 				} else {
