@@ -1,5 +1,5 @@
 {
-	"ffGeoJsonUrl": "http://freifunk.net/map/ffGeoJson.json",
+	"directoryUrl": "http://freifunk.net/map/ffSummarizedDir.json",
 	"defaultLimit" : 20,
 	"additionalFeeds" : 
 	[

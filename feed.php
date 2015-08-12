@@ -9,7 +9,7 @@ if ( ! empty($_GET["category"]) ) {
 
 $configs = file_get_contents("config.json");
 $configs = json_decode($configs, true);
-$communities = $configs['ffGeoJsonUrl'];
+$communities = $configs['directoryUrl'];
 $limit = $configs['defaultLimit'];
 if ( ! empty($_GET["items"]) ) {
 	$limit = $_GET["items"];
@@ -18,8 +18,7 @@ $feeds = array();
 
 //load combined api file
 $api = file_get_contents($communities);
-$json = json_decode($api, true);
-$geofeatures = $json['features'];
+$communities = json_decode($api, true);
 
 // get additional feeds from config
 foreach($configs['additionalFeeds'] as $additionalFeed) {
@@ -29,16 +28,16 @@ foreach($configs['additionalFeeds'] as $additionalFeed) {
 }
 
 // get feeds from API
-foreach($geofeatures as $feature)
+foreach($communities as $community)
 {
-	if ( ! empty($feature['properties']['feeds'] ) ) {
-		foreach($feature['properties']['feeds'] as $feed )
+	if ( ! empty($community['feeds'] ) ) {
+		foreach($community['feeds'] as $feed )
 		{
 			if ( ! empty($feed['category']) && $feed['category'] == $category && !empty($feed['type']) && $feed['type'] == "rss" ) {
 				if ( array_key_exists($feed['url'], $feeds) ) {
-					array_push($feeds[$feed['url']][3], $feature['properties']['shortname']);
+					array_push($feeds[$feed['url']][3], $community);
 				} else {
-					$feeds[$feed['url']] = array($feed['url'],$feature['properties']['name'], $feature['properties']['url'], array($feature['properties']['shortname']));
+					$feeds[$feed['url']] = array($feed['url'],$community['name'], $community['url'], array($community));
 				}
 			}
 		}
