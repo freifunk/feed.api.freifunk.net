@@ -153,12 +153,15 @@ class MergedRSS {
 	private function __fetch_rss_from_url($url) {
 		// Create new SimpleXMLElement instance
 		try {
-			//set user agent, i.e. facebook.com doesn't deliver feeds to unknown browsers
-			ini_set('user_agent', 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2049.0 Safari/537.36');
-			$fp = fopen($url, 'r', false , stream_context_create(array('http' => array('timeout' => $this->fetch_timeout))));
-
-			if ($fp) {
-				$sxe = simplexml_load_string(stream_get_contents($fp));
+			$ch = curl_init();
+                        curl_setopt($ch, CURLOPT_URL,$url);
+                        curl_setopt($ch, CURLOPT_SSLVERSION,6);
+                        curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 1);
+                        curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+                        $fp = curl_exec($ch);
+                        curl_close($ch);
+                        if (! curl_errno($ch)) {
+				$sxe = simplexml_load_string($fp);
 			} else {
 				$sxe = false;
 			}
