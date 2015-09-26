@@ -27,16 +27,16 @@ foreach($configs['additionalFeeds'] as $additionalFeed) {
 }
 
 // get feeds from API
-foreach($communities as $community)
+foreach($communities as $indexName => $community)
 {
 	if ( ! empty($community['feeds'] ) ) {
 		foreach($community['feeds'] as $feed )
 		{
 			if ( ! empty($feed['category']) && $feed['category'] == $category && !empty($feed['type']) && $feed['type'] == "rss" )  {
 				if ( array_key_exists($feed['url'], $feeds) ) {
-					array_push($feeds[$feed['url']][3], $community['name']);
+					array_push($feeds[$feed['url']][3], $indexName);
 				} else {
-					$feeds[$feed['url']] = array($feed['url'],$community['name'], $community['url'], array($community['name']));
+					$feeds[$feed['url']] = array($feed['url'],$community['name'], $community['url'], array($indexName));
 				}
 			}
 		}
@@ -49,7 +49,7 @@ header("Content-type: text/xml");
 $feed_date = date("r", mktime(10,0,0,9,8,2010));
 
 // Create new MergedRSS object with desired parameters
-$MergedRSS = new MergedRSS($feeds, "FLONS Community Feeds", "http://www.flons.org/", "This the merged RSS feed of RSS feeds of our communities", "http://wiki.freifunk.net/images/7/78/175x170_freifunknet.png", $feed_date);
+$MergedRSS = new MergedRSS($feeds, "Freifunk Community Feeds", "http://www.freifunk.net/", "This the merged RSS feed of RSS feeds of our communities", "http://wiki.freifunk.net/images/7/78/175x170_freifunknet.png", $feed_date);
 
 //Export the first 10 items to screen
 $result = $MergedRSS->export(true, false, (array_key_exists('limit', $_GET) ? $_GET['limit'] : $limit), (array_key_exists('source', $_GET) ? $_GET['source'] : 'all'));
