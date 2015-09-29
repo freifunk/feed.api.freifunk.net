@@ -114,7 +114,7 @@ class MergedRSS {
 
 			// sort items
 			usort($items, array($this,"__compare_items"));		
-	
+
 			// if desired, splice items into an array of the specified size
 			if (isset($limit)) { array_splice($items, intval($limit)); }
 
@@ -122,17 +122,17 @@ class MergedRSS {
 			for ($i=0; $i<sizeof($items); $i++) { 
 				$xml .= $items[$i]->asXML() ."\n";
 			}
-			
+
 
 		}
 		$xml .= "</channel>\n</rss>";
 
 		// if output is desired print to screen
 		if ($output) { echo $xml; }
-		
+
 		// if user wants results returned as a string, do so
 		if ($return_as_string) { return $xml; }
-		
+
 	}
 
 
@@ -154,16 +154,17 @@ class MergedRSS {
 		// Create new SimpleXMLElement instance
 		try {
 			$ch = curl_init();
-                        curl_setopt($ch, CURLOPT_URL,$url);
-                        curl_setopt($ch, CURLOPT_SSLVERSION,6);
-                        curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 1);
-                        curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
-                        curl_setopt($ch, CURLOPT_TIMEOUT, $fetch_timeout);
-                        $fp = curl_exec($ch);
-                        curl_close($ch);
-                        if (! curl_errno($ch)) {
+			curl_setopt($ch, CURLOPT_URL,$url);
+			curl_setopt($ch, CURLOPT_SSLVERSION,6);
+			//curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 1);
+			curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+			curl_setopt($ch, CURLOPT_TIMEOUT, $this->fetch_timeout);
+			$fp = $this->curl_exec_follow($ch);
+			curl_close($ch);
+			if (! curl_errno($ch)) {
 				$sxe = simplexml_load_string($fp);
 			} else {
+				error_log("cannot load feed " . $url);
 				$sxe = false;
 			}
 			return $sxe;
@@ -175,6 +176,51 @@ class MergedRSS {
 	// creates a key for a specific feed url (used for creating friendly file names)
 	private function __create_feed_key($url) { 
 		return preg_replace('/[^a-zA-Z0-9\.]/', '_', $url) . 'cache';
+	}
+
+	private function curl_exec_follow(/*resource*/ $ch, /*int*/ &$maxredirect = null) { 
+		$mr = $maxredirect === null ? 5 : intval($maxredirect); 
+		if (ini_get('open_basedir') == '' && ini_get('safe_mode' == 'Off')) { 
+			curl_setopt($ch, CURLOPT_FOLLOWLOCATION, $mr > 0); 
+			curl_setopt($ch, CURLOPT_MAXREDIRS, $mr); 
+		} else { 
+			curl_setopt($ch, CURLOPT_FOLLOWLOCATION, false); 
+			if ($mr > 0) { 
+				$newurl = curl_getinfo($ch, CURLINFO_EFFECTIVE_URL); 
+
+				$rch = curl_copy_handle($ch); 
+				curl_setopt($rch, CURLOPT_HEADER, true); 
+				curl_setopt($rch, CURLOPT_NOBODY, true); 
+				curl_setopt($rch, CURLOPT_FORBID_REUSE, false); 
+				curl_setopt($rch, CURLOPT_RETURNTRANSFER, true); 
+				do { 
+					curl_setopt($rch, CURLOPT_URL, $newurl); 
+					$header = curl_exec($rch); 
+					if (curl_errno($rch)) { 
+						$code = 0; 
+					} else { 
+						$code = curl_getinfo($rch, CURLINFO_HTTP_CODE); 
+						if ($code == 301 || $code == 302) { 
+							preg_match('/Location:(.*?)\n/', $header, $matches); 
+							$newurl = trim(array_pop($matches)); 
+						} else { 
+							$code = 0; 
+						} 
+					} 
+				} while ($code && --$mr); 
+				curl_close($rch); 
+				if (!$mr) { 
+					if ($maxredirect === null) { 
+						trigger_error('Too many redirects. When following redirects, libcurl hit the maximum amount.', E_USER_WARNING); 
+					} else { 
+						$maxredirect = 0; 
+					} 
+					return false; 
+				} 
+				curl_setopt($ch, CURLOPT_URL, $newurl); 
+			} 
+		} 
+		return curl_exec($ch); 
 	}
 
 }
