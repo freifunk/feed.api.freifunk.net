@@ -39,13 +39,15 @@ class JsonpHelper {
 			JsonpHelper::set_header($format);
 		  print($string);
 		}
-		$string = str_replace("\n", " ", str_replace("'", '"', $string));
+		//$string = str_replace("\n", " ", str_replace("'", '"', $string));
 		# JSONP if valid callback
-		if(JsonpHelper::is_valid_callback($_GET['callback'])) {
-			JsonpHelper::set_header($format);
-		  print("{$_GET['callback']}('$string')");
+		else if(JsonpHelper::is_valid_callback($_GET['callback'])) {
+			header("Content-type: application/javascript");
+		  print("{$_GET['callback']}($string);");
+		} else {
+			# Otherwise, bad request
+			JsonpHelper::set_header("badrequest");
+
 		}
-		# Otherwise, bad request
-		JsonpHelper::set_header("badrequest");
 	}
 }

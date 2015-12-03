@@ -27,7 +27,7 @@ $communities = json_decode($api, true);
 // get additional feeds from config
 foreach($configs['additionalFeeds'] as $additionalFeed) {
 	if ($additionalFeed['category'] == $category) {
-		$feeds[$additionalFeed['name']] = array($additionalFeed['url'], $additionalFeed['name'], $additionalFeed['homepage'], array());
+		$feeds[$additionalFeed['name']] = array($additionalFeed['url'], $additionalFeed['name'], $additionalFeed['homepage'], array($additionalFeed['name']));
 	}
 }
 
@@ -52,7 +52,7 @@ foreach($communities as $indexName => $community)
 $feed_date = date("r", mktime(10,0,0,9,8,2010));
 
 // Create new MergedRSS object with desired parameters
-$MergedRSS = new MergedRSS($feeds, "Freifunk Community Feeds", "http://www.freifunk.net/", "This the merged RSS feed of RSS feeds of our communities", "http://wiki.freifunk.net/images/7/78/175x170_freifunknet.png", $feed_date);
+$MergedRSS = new MergedRSS($feeds, "Weimarnetz Feed", "http://weimarnetz.de/", "Das ist der Feed vom Weimarnetz", "http://wiki.freifunk.net/images/7/78/175x170_freifunknet.png", $feed_date);
 
 //Export the first 10 items to screen
 $result = $MergedRSS->export(true, false, (array_key_exists('limit', $_GET) ? $_GET['limit'] : $limit), (array_key_exists('source', $_GET) ? $_GET['source'] : 'all'));
