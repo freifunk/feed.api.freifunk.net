@@ -18,16 +18,34 @@ class JsonpHelper {
 	        && ! in_array(mb_strtolower($subject, 'UTF-8'), $reserved_words);
 	}
 
-	public static function outputXML($string) {
+	private static function set_header($format) {
+		if ($format === "json") {
+			header("Content-type: application/json");
+		} else if ($format === "xml") {
+			header("Content-type: text/xml");
+		} else {
+			header('status: 400 Bad Request', true, 400);
+		}
+	}
+	
+	
+	public static function output($string, $format) {
+		if ($format === "json") {
+			$xml = simplexml_load_string($string);
+			$string = json_encode($xml);
+		}
 		# JSON if no callback
-		if( ! isset($_GET['callback']) )
-		    exit($string);
+		if( ! isset($_GET['callback']) ) {
+			JsonpHelper::set_header($format);
+		  print($string);
+		}
 		$string = str_replace("\n", " ", str_replace("'", '"', $string));
 		# JSONP if valid callback
-		if(JsonpHelper::is_valid_callback($_GET['callback']))
-		    exit("{$_GET['callback']}('$string')");
-
+		if(JsonpHelper::is_valid_callback($_GET['callback'])) {
+			JsonpHelper::set_header($format);
+		  print("{$_GET['callback']}('$string')");
+		}
 		# Otherwise, bad request
-		header('status: 400 Bad Request', true, 400);
+		JsonpHelper::set_header("badrequest");
 	}
 }

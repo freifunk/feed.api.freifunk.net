@@ -131,7 +131,9 @@ class MergedRSS {
 		if ($output) { echo $xml; }
 
 		// if user wants results returned as a string, do so
-		if ($return_as_string) { return $xml; }
+			if ($return_as_string) { 
+				return $xml;
+			}
 
 	}
 

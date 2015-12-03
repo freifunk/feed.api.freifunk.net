@@ -6,6 +6,11 @@ if ( ! empty($_GET["category"]) ) {
 } else {
 	$category = "blog";
 }
+if ( ! empty($_GET["format"]) && $_GET["format"] === "json" ) {
+	$format = $_GET["format"];
+} else {
+	$format = "xml";
+}
 $configs = file_get_contents("config.json");
 $configs = json_decode($configs, true);
 $communities = $configs['directoryUrl'];
@@ -43,8 +48,6 @@ foreach($communities as $indexName => $community)
 	}
 }
 
-// set the header type
-header("Content-type: text/xml");
 // set an arbitrary feed date
 $feed_date = date("r", mktime(10,0,0,9,8,2010));
 
@@ -54,4 +57,4 @@ $MergedRSS = new MergedRSS($feeds, "Freifunk Community Feeds", "http://www.freif
 //Export the first 10 items to screen
 $result = $MergedRSS->export(true, false, (array_key_exists('limit', $_GET) ? $_GET['limit'] : $limit), (array_key_exists('source', $_GET) ? $_GET['source'] : 'all'));
 
-JsonpHelper::outputXML($result);
+JsonpHelper::output($result, $format);
