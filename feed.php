@@ -55,6 +55,6 @@ $feed_date = date("r", mktime(10,0,0,9,8,2010));
 $MergedRSS = new MergedRSS($feeds, "Freifunk Community Feeds", "https://freifunk.net/", "This the merged RSS feed of RSS feeds of our communities", "http://wiki.freifunk.net/images/7/78/175x170_freifunknet.png", $feed_date);
 
 //Export the first 10 items to screen
-$result = $MergedRSS->export(true, false, (array_key_exists('limit', $_GET) ? $_GET['limit'] : $limit), (array_key_exists('source', $_GET) ? $_GET['source'] : 'all'));
+$result = $MergedRSS->export(true, false, $limit, (array_key_exists('source', $_GET) ? $_GET['source'] : 'all'));
 
 JsonpHelper::output($result, $format);

@@ -36,8 +36,8 @@ class MergedRSS {
 	// exports the data as a returned value and/or outputted to the screen
 	public function export($return_as_string = true, $output = false, $limit = null, $community = 'all') {
 		// initialize a combined item array for later
-		$items = array();	
-
+		$items = array();
+		
 		// loop through each feed
 		foreach ($this->myFeeds as $key => $feed_array) {
 			if ($community !== 'all' && ! in_array($community, $feed_array[3])) {
@@ -82,10 +82,11 @@ class MergedRSS {
 				}
 			}
 
-			if (isset($results)) { 
+			if (isset($results)) {
 				// add each item to the master item list
 				foreach ($results as $item) {
 					if (trim($item->title) == '') {
+						print_r($item);
 						continue;
 					}
 					//convert title to utf-8 (i.e. from facebook feeds)
@@ -100,7 +101,7 @@ class MergedRSS {
 
 		// set all the initial, necessary xml data
 		$xml =  "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n";
-		$xml .= "<rss version=\"2.0\" xmlns:content=\"http://purl.org/rss/1.0/modules/content/\" xmlns:wfw=\"http://wellformedweb.org/CommentAPI/\" xmlns:dc=\"http://purl.org/dc/elements/1.1/\" xmlns:atom=\"http://www.w3.org/2005/Atom\" xmlns:sy=\"http://purl.org/rss/1.0/modules/syndication/\" xmlns:slash=\"http://purl.org/rss/1.0/modules/slash/\" xmlns:itunes=\"http://www.itunes.com/DTDs/Podcast-1.0.dtd\" >\n";
+		$xml .= "<rss version=\"2.0\" xmlns:content=\"http://purl.org/rss/1.0/modules/content/\" xmlns:wfw=\"http://wellformedweb.org/CommentAPI/\" xmlns:dc=\"http://purl.org/dc/elements/1.1/\" xmlns:atom=\"http://www.w3.org/2005/Atom\" xmlns:sy=\"http://purl.org/rss/1.0/modules/syndication/\" xmlns:slash=\"http://purl.org/rss/1.0/modules/slash/\" xmlns:itunes=\"http://www.itunes.com/DTDs/Podcast-1.0.dtd\" xmlns:media=\"http://search.yahoo.com/mrss/\" xmlns:psc=\"http://podlove.org/simple-chapters\" xmlns:fh=\"http://purl.org/syndication/history/1.0\" xmlns:podcast=\"https://podcastindex.org/namespace/1.0\" >\n";
 		$xml .= "<channel>\n";
 		if (isset($this->myTitle)) { $xml .= "\t<title>".$this->myTitle."</title>\n"; }
 		$xml .= "\t<atom:link href=\"http://".$_SERVER['HTTP_HOST'].$_SERVER['PHP_SELF']."\" rel=\"self\" type=\"application/rss+xml\" />\n";
@@ -158,17 +159,19 @@ class MergedRSS {
 			$ch = curl_init();
 			curl_setopt($ch, CURLOPT_URL,$url);
 			curl_setopt($ch, CURLOPT_SSLVERSION,6);
+			curl_setopt($ch, CURLOPT_USERAGENT,'Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.8.1.13) Gecko/20080311 Firefox/2.0.0.13');
 			//curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 1);
 			curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
 			curl_setopt($ch, CURLOPT_TIMEOUT, $this->fetch_timeout);
 			$fp = $this->curl_exec_follow($ch);
-			curl_close($ch);
-			if (! curl_errno($ch)) {
+			if ( ! curl_errno($ch)) {
+				error_log($url);
 				$sxe = simplexml_load_string($fp);
 			} else {
-				error_log("cannot load feed " . $url);
+				error_log("cannot load feed " . $url . ", with cause: " . curl_errno($ch));
 				$sxe = false;
 			}
+			curl_close($ch);
 			return $sxe;
 		} catch (Exception $e) {
 			return null;
