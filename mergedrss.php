@@ -63,7 +63,11 @@ class MergedRSS {
 				$results = $sxe->channel->item;
 			} else { 
 				// retrieve updated rss feed
-				$sxe = $this->__fetch_rss_from_url($feed_url);
+				$sxe_raw = $this->__fetch_rss_from_url($feed_url);
+				if (!$sxe_raw) {
+					continue;
+				}
+				$sxe = $this->__convert_to_rss($sxe_raw);
 				if ( is_object($sxe) ) {
 					$results = $sxe->channel->item;
 				}
@@ -101,7 +105,8 @@ class MergedRSS {
 
 		// set all the initial, necessary xml data
 		$xml =  "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n";
-		$xml .= "<rss version=\"2.0\" xmlns:content=\"http://purl.org/rss/1.0/modules/content/\" xmlns:wfw=\"http://wellformedweb.org/CommentAPI/\" xmlns:dc=\"http://purl.org/dc/elements/1.1/\" xmlns:atom=\"http://www.w3.org/2005/Atom\" xmlns:sy=\"http://purl.org/rss/1.0/modules/syndication/\" xmlns:slash=\"http://purl.org/rss/1.0/modules/slash/\" xmlns:itunes=\"http://www.itunes.com/DTDs/Podcast-1.0.dtd\" xmlns:media=\"http://search.yahoo.com/mrss/\" xmlns:psc=\"http://podlove.org/simple-chapters\" xmlns:fh=\"http://purl.org/syndication/history/1.0\" xmlns:podcast=\"https://podcastindex.org/namespace/1.0\" xmlns:cc=\"http://cyber.law.harvard.edu/rss/creativeCommonsRssModule.html\" >\n";
+    $xml .= "<rss version=\"2.0\" xmlns:content=\"http://purl.org/rss/1.0/modules/content/\" xmlns:wfw=\"http://wellformedweb.org/CommentAPI/\" xmlns:dc=\"http://purl.org/dc/elements/1.1/\" xmlns:atom=\"http://www.w3.org/2005/Atom\" xmlns:sy=\"http://purl.org/rss/1.0/modules/syndication/\" xmlns:slash=\"http://purl.org/rss/1.0/modules/slash/\" xmlns:itunes=\"http://www.itunes.com/DTDs/Podcast-1.0.dtd\" xmlns:media=\"http://search.yahoo.com/mrss/\" xmlns:psc=\"http://podlove.org/simple-chapters\" xmlns:fh=\"http://purl.org/syndication/history/1.0\" xmlns:podcast=\"https://podcastindex.org/namespace/1.0\" xmlns:cc=\"http://cyber.law.harvard.edu/rss/creativeCommonsRssModule.html\" >\n";
+    $xml .= "<generator>Freifunk API Feed Aggregator with the help of https://atom.geekhood.net/</generator>\n";
 		$xml .= "<channel>\n";
 		if (isset($this->myTitle)) { $xml .= "\t<title>".$this->myTitle."</title>\n"; }
 		$xml .= "\t<atom:link href=\"http://".$_SERVER['HTTP_HOST'].$_SERVER['PHP_SELF']."\" rel=\"self\" type=\"application/rss+xml\" />\n";
@@ -138,6 +143,19 @@ class MergedRSS {
 
 	}
 
+	// checks if we have an atom or rss feed
+	private function __convert_to_rss($feed) {
+		if ($feed->getName() == 'feed') {
+			$xsl = simplexml_load_file('atom2rss.xsl');
+			$xslt = new XSLTProcessor();
+			$xslt->registerPHPFunctions();
+			$xslt->importStyleSheet($xsl);
+			return simplexml_load_string($xslt->transformToXml($feed));
+		  } else {
+			return $feed;
+		  };
+  
+	}
 
 	// compares two items based on "pubDate"	
 	private function __compare_items($a,$b) {
@@ -160,15 +178,15 @@ class MergedRSS {
 			curl_setopt($ch, CURLOPT_URL,$url);
 			curl_setopt($ch, CURLOPT_SSLVERSION,6);
 			curl_setopt($ch, CURLOPT_USERAGENT,'Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.8.1.13) Gecko/20080311 Firefox/2.0.0.13');
-			//curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 1);
 			curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
 			curl_setopt($ch, CURLOPT_TIMEOUT, $this->fetch_timeout);
 			$fp = $this->curl_exec_follow($ch);
-			if ( ! curl_errno($ch)) {
+			$code = curl_getinfo($ch, CURLINFO_HTTP_CODE);
+			if ( ! curl_errno($ch) && $code >= 200 && $code < 300) {
 				error_log($url);
 				$sxe = simplexml_load_string($fp);
 			} else {
-				error_log("cannot load feed " . $url . ", with cause: " . curl_errno($ch));
+				error_log("cannot load feed " . $url . ", with cause: " . curl_errno($ch) . " or error code " .$code);
 				$sxe = false;
 			}
 			curl_close($ch);
@@ -184,7 +202,7 @@ class MergedRSS {
 	}
 
 	private function curl_exec_follow(/*resource*/ $ch, /*int*/ &$maxredirect = null) { 
-		$mr = $maxredirect === null ? 5 : intval($maxredirect); 
+		$mr = $maxredirect === null ? 5 : intval($maxredirect);
 		if (ini_get('open_basedir') == '' && ini_get('safe_mode' == 'Off')) { 
 			curl_setopt($ch, CURLOPT_FOLLOWLOCATION, $mr > 0); 
 			curl_setopt($ch, CURLOPT_MAXREDIRS, $mr); 
@@ -198,15 +216,15 @@ class MergedRSS {
 				curl_setopt($rch, CURLOPT_NOBODY, true); 
 				curl_setopt($rch, CURLOPT_FORBID_REUSE, false); 
 				curl_setopt($rch, CURLOPT_RETURNTRANSFER, true); 
-				do { 
-					curl_setopt($rch, CURLOPT_URL, $newurl); 
-					$header = curl_exec($rch); 
+				do {
+					curl_setopt($rch, CURLOPT_URL, $newurl);
+					$header = curl_exec($rch);
 					if (curl_errno($rch)) { 
 						$code = 0; 
 					} else { 
 						$code = curl_getinfo($rch, CURLINFO_HTTP_CODE); 
 						if ($code == 301 || $code == 302) { 
-							preg_match('/Location:(.*?)\n/', $header, $matches); 
+							preg_match('/[Ll]ocation:(.*?)\n/', $header, $matches); 
 							$newurl = trim(array_pop($matches)); 
 						} else { 
 							$code = 0; 
@@ -221,7 +239,7 @@ class MergedRSS {
 						$maxredirect = 0; 
 					} 
 					return false; 
-				} 
+				}
 				curl_setopt($ch, CURLOPT_URL, $newurl); 
 			} 
 		} 
