@@ -183,7 +183,6 @@ class MergedRSS {
 			$fp = $this->curl_exec_follow($ch);
 			$code = curl_getinfo($ch, CURLINFO_HTTP_CODE);
 			if ( ! curl_errno($ch) && $code >= 200 && $code < 300) {
-				error_log($url);
 				$sxe = simplexml_load_string($fp);
 			} else {
 				error_log("cannot load feed " . $url . ", with cause: " . curl_errno($ch) . " or error code " .$code);

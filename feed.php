@@ -37,7 +37,7 @@ foreach($communities as $indexName => $community)
 	if ( ! empty($community['feeds'] ) ) {
 		foreach($community['feeds'] as $feed )
 		{
-			if ( ! empty($feed['category']) && $feed['category'] == $category && !empty($feed['type']) && strtolower($feed['type']) == "rss" )  {
+			if ( ! empty($feed['category']) && $feed['category'] == $category && !empty($feed['type']) && (strtolower($feed['type']) == "rss" || strtolower($feed['type']) == "atom" ) )  {
 				if ( array_key_exists($feed['url'], $feeds) ) {
 					array_push($feeds[$feed['url']][3], $indexName);
 				} else {
