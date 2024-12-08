@@ -90,7 +90,6 @@ class MergedRSS {
 				// add each item to the master item list
 				foreach ($results as $item) {
 					if (trim($item->title) == '') {
-						print_r($item);
 						continue;
 					}
 					//convert title to utf-8 (i.e. from facebook feeds)
