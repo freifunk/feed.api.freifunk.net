@@ -88,7 +88,6 @@ class MergedRSS
 			if (isset($results)) {
 				foreach ($results as $item) {
 					if (trim($item->title) == '') {
-						print_r($item);
 						continue;
 					}
 					$item->title = html_entity_decode($item->title, ENT_QUOTES, 'UTF-8');
