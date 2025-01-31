@@ -1,0 +1,28 @@
+name: PHP Unit Tests
+
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  phpunit:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Set up PHP
+      uses: shivammathur/setup-php@v2
+      with:
+        php-version: '8.3' # Use PHP 8.3
+        extensions: mbstring, xml, curl
+        coverage: none
+
+    - name: Install Composer dependencies
+      run: ./bin/composer install --prefer-dist --no-progress --no-suggest
+
+    - name: Run PHPUnit
+      run: ./vendor/bin/phpunit --bootstrap vendor/autoload.php tests
