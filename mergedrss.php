@@ -108,10 +108,14 @@ class MergedRSS
 
 		// Convert all items to XML
 		$xml = "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n";
-		$xml .= "<rss version=\"2.0\">\n<channel>\n";
-		$xml .= "<title>{$this->myTitle}</title>\n";
-		$xml .= "<link>{$this->myLink}</link>\n";
-		$xml .= "<description>{$this->myDescription}</description>\n";
+		$xml .= "<rss version=\"2.0\" xmlns:content=\"http://purl.org/rss/1.0/modules/content/\" xmlns:wfw=\"http://wellformedweb.org/CommentAPI/\" xmlns:dc=\"http://purl.org/dc/elements/1.1/\" xmlns:atom=\"http://www.w3.org/2005/Atom\" xmlns:sy=\"http://purl.org/rss/1.0/modules/syndication/\" xmlns:slash=\"http://purl.org/rss/1.0/modules/slash/\" xmlns:itunes=\"http://www.itunes.com/DTDs/Podcast-1.0.dtd\" xmlns:media=\"http://search.yahoo.com/mrss/\" xmlns:psc=\"http://podlove.org/simple-chapters\" xmlns:fh=\"http://purl.org/syndication/history/1.0\" xmlns:podcast=\"https://podcastindex.org/namespace/1.0\" xmlns:cc=\"http://cyber.law.harvard.edu/rss/creativeCommonsRssModule.html\" xmlns:friends=\"wordpress-plugin-friends:feed-additions:1\" xmlns:discourse=\"http://www.discourse.org/\" >\n";
+		$xml .= "<generator>Freifunk API Feed Aggregator with the help of https://atom.geekhood.net/</generator>\n";
+		$xml .= "<channel>\n";
+		$xml .= "\t<title>{$this->myTitle}</title>\n";
+		$xml .= "\t<atom:link href=\"http://".$_SERVER['HTTP_HOST'].$_SERVER['PHP_SELF']."\" rel=\"self\" type=\"application/rss+xml\" />\n";
+		$xml .= "\t<link>{$this->myLink}</link>\n";
+		$xml .= "\t<description>{$this->myDescription}</description>\n";
+		if (isset($this->myImage)) { $xml .= "\t<itunes:image href=\"".$this->myImage."\" />\n"; }
 		if (isset($this->myPubDate)) {
 			$xml .= "\t<pubDate>{$this->myPubDate}</pubDate>\n";
 		}
