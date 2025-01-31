@@ -1,0 +1,965 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:wfw="http://wellformedweb.org/CommentAPI/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" xmlns:slash="http://purl.org/rss/1.0/modules/slash/" xmlns:itunes="http://www.itunes.com/DTDs/Podcast-1.0.dtd" xmlns:media="http://search.yahoo.com/mrss/" xmlns:psc="http://podlove.org/simple-chapters" xmlns:fh="http://purl.org/syndication/history/1.0" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:cc="http://cyber.law.harvard.edu/rss/creativeCommonsRssModule.html" >
+<generator>Freifunk API Feed Aggregator with the help of https://atom.geekhood.net/</generator>
+<channel>
+	<title>Freifunk Community Feeds</title>
+	<atom:link href="http://feed.php" rel="self" type="application/rss+xml" />
+	<link>https://freifunk.net/</link>
+	<description>This the merged RSS feed of RSS feeds of our communities</description>
+	<itunes:image href="http://wiki.freifunk.net/images/7/78/175x170_freifunknet.png" />
+	<pubDate>Wed, 08 Sep 2010 10:00:00 +0000</pubDate>
+<item>
+		<title>Freifunk Saar dankt für Hardware-Spenden</title>
+		<link>https://saar.freifunk.net/danke-fuer-hardware-spenden/</link>
+		
+		<dc:creator><![CDATA[KimCM]]></dc:creator>
+		<pubDate>Thu, 31 Mar 2022 10:55:40 +0000</pubDate>
+				<category><![CDATA[Allgemein]]></category>
+		<category><![CDATA[Community]]></category>
+		<category><![CDATA[Saarbrücken]]></category>
+		<guid isPermaLink="false">https://saar.freifunk.net/?p=2152</guid>
+
+					<description><![CDATA[Wir bedanken uns bei itechx GmbH für die Spende von 4 Freifunk-Knoten, Powerline- und PoE-Adaptern. Ebenso bedanken wir uns bei IKU Systems für die Spende von 4 weiteren Freifunk-Knoten. Darüber hinaus erreichten uns bisher Spenden von Privatpersonen, wie z.B. ein 50m Ethernet-Kabel, PowerLine-Adapter und weitere Freifunk-Knoten. Ohne euch wäre die Versorgung der Flüchtlingsunterkünfte durch Freifunk Saar nicht möglich. Vielen Dank für eure Unterstützung!]]></description>
+										<content:encoded><![CDATA[
+<p>Zurzeit unterstützen Freiwillige von Freifunk Saar die Stadt Saarbrücken und statten <a href="https://saar.freifunk.net/freies-wlan-fur-fluchtlingsunterkunfte/" data-type="URL" data-id="https://saar.freifunk.net/freies-wlan-fur-fluchtlingsunterkunfte/">Unterkünfte für Geflüchtete mit WLAN aus</a>.</p>
+
+
+
+<figure class="wp-block-gallery has-nested-images columns-default is-cropped">
+<figure class="wp-block-image size-large"><a href="https://saar.freifunk.net/wp-content/uploads/2022/03/IMG20220330134008-scaled.jpg"><img width="1024" height="768" data-id="2156"  src="https://saar.freifunk.net/wp-content/uploads/2022/03/IMG20220330134008-1024x768.jpg" alt="" class="wp-image-2156" srcset="https://saar.freifunk.net/wp-content/uploads/2022/03/IMG20220330134008-1024x768.jpg 1024w, https://saar.freifunk.net/wp-content/uploads/2022/03/IMG20220330134008-300x225.jpg 300w, https://saar.freifunk.net/wp-content/uploads/2022/03/IMG20220330134008-768x576.jpg 768w, https://saar.freifunk.net/wp-content/uploads/2022/03/IMG20220330134008-1536x1152.jpg 1536w, https://saar.freifunk.net/wp-content/uploads/2022/03/IMG20220330134008-2048x1536.jpg 2048w, https://saar.freifunk.net/wp-content/uploads/2022/03/IMG20220330134008-600x450.jpg 600w" sizes="(max-width: 1024px) 100vw, 1024px" /></a></figure>
+
+
+
+<figure class="wp-block-image size-large"><a href="https://saar.freifunk.net/wp-content/uploads/2022/03/IMG20220330134402-scaled.jpg"><img loading="lazy" width="768" height="1024" data-id="2157"  src="https://saar.freifunk.net/wp-content/uploads/2022/03/IMG20220330134402-768x1024.jpg" alt="" class="wp-image-2157" srcset="https://saar.freifunk.net/wp-content/uploads/2022/03/IMG20220330134402-768x1024.jpg 768w, https://saar.freifunk.net/wp-content/uploads/2022/03/IMG20220330134402-225x300.jpg 225w, https://saar.freifunk.net/wp-content/uploads/2022/03/IMG20220330134402-1152x1536.jpg 1152w, https://saar.freifunk.net/wp-content/uploads/2022/03/IMG20220330134402-1536x2048.jpg 1536w, https://saar.freifunk.net/wp-content/uploads/2022/03/IMG20220330134402-600x800.jpg 600w, https://saar.freifunk.net/wp-content/uploads/2022/03/IMG20220330134402-scaled.jpg 1920w" sizes="(max-width: 768px) 100vw, 768px" /></a></figure>
+
+
+
+<figure class="wp-block-image size-large"><a href="https://saar.freifunk.net/wp-content/uploads/2022/03/IMG20220312182315-scaled.jpg"><img loading="lazy" width="768" height="1024" data-id="2158"  src="https://saar.freifunk.net/wp-content/uploads/2022/03/IMG20220312182315-768x1024.jpg" alt="" class="wp-image-2158" srcset="https://saar.freifunk.net/wp-content/uploads/2022/03/IMG20220312182315-768x1024.jpg 768w, https://saar.freifunk.net/wp-content/uploads/2022/03/IMG20220312182315-225x300.jpg 225w, https://saar.freifunk.net/wp-content/uploads/2022/03/IMG20220312182315-1152x1536.jpg 1152w, https://saar.freifunk.net/wp-content/uploads/2022/03/IMG20220312182315-1536x2048.jpg 1536w, https://saar.freifunk.net/wp-content/uploads/2022/03/IMG20220312182315-600x800.jpg 600w, https://saar.freifunk.net/wp-content/uploads/2022/03/IMG20220312182315-scaled.jpg 1920w" sizes="(max-width: 768px) 100vw, 768px" /></a></figure>
+</figure>
+
+
+
+<p>Hilfe bekommen unsere Helferinnen und Helfer dabei von Firmen und Privatpersonen, die durch Spenden die dazu notwendige Hardware bereitstellen.</p>
+
+
+
+<p>Wir bedanken uns bei <a href="https://www.itechx.de">itechx GmbH</a> für die Spende von 4 Freifunk-Knoten, Powerline- und PoE-Adaptern. Ebenso bedanken wir uns bei <a href="https://iku-systems.de/">IKU Systems</a> für die Spende von 4 weiteren Freifunk-Knoten. Darüber hinaus erreichten uns bisher Spenden von Privatpersonen, wie z.B. ein 50m Ethernet-Kabel, PowerLine-Adapter und weitere Freifunk-Knoten. Ohne euch wäre die Versorgung der Flüchtlingsunterkünfte durch Freifunk Saar nicht möglich.</p>
+
+
+
+<p>Vielen Dank für eure Unterstützung!</p>
+
+
+
+<figure class="wp-block-gallery has-nested-images columns-default is-cropped">
+<figure class="wp-block-image size-large is-resized"><a href="https://saar.freifunk.net/wp-content/uploads/2022/03/IMG20220317121845-scaled.jpg"><img loading="lazy" data-id="2153"  src="https://saar.freifunk.net/wp-content/uploads/2022/03/IMG20220317121845-768x1024.jpg" alt="" class="wp-image-2153" width="427" height="569" srcset="https://saar.freifunk.net/wp-content/uploads/2022/03/IMG20220317121845-768x1024.jpg 768w, https://saar.freifunk.net/wp-content/uploads/2022/03/IMG20220317121845-225x300.jpg 225w, https://saar.freifunk.net/wp-content/uploads/2022/03/IMG20220317121845-1152x1536.jpg 1152w, https://saar.freifunk.net/wp-content/uploads/2022/03/IMG20220317121845-1536x2048.jpg 1536w, https://saar.freifunk.net/wp-content/uploads/2022/03/IMG20220317121845-600x800.jpg 600w, https://saar.freifunk.net/wp-content/uploads/2022/03/IMG20220317121845-scaled.jpg 1920w" sizes="(max-width: 427px) 100vw, 427px" /></a></figure>
+
+
+
+<figure class="wp-block-image size-large"><a href="https://saar.freifunk.net/wp-content/uploads/2022/03/IMG20220317161943-scaled.jpg"><img loading="lazy" width="1024" height="768" data-id="2154"  src="https://saar.freifunk.net/wp-content/uploads/2022/03/IMG20220317161943-1024x768.jpg" alt="" class="wp-image-2154" srcset="https://saar.freifunk.net/wp-content/uploads/2022/03/IMG20220317161943-1024x768.jpg 1024w, https://saar.freifunk.net/wp-content/uploads/2022/03/IMG20220317161943-300x225.jpg 300w, https://saar.freifunk.net/wp-content/uploads/2022/03/IMG20220317161943-768x576.jpg 768w, https://saar.freifunk.net/wp-content/uploads/2022/03/IMG20220317161943-1536x1152.jpg 1536w, https://saar.freifunk.net/wp-content/uploads/2022/03/IMG20220317161943-2048x1536.jpg 2048w, https://saar.freifunk.net/wp-content/uploads/2022/03/IMG20220317161943-600x450.jpg 600w" sizes="(max-width: 1024px) 100vw, 1024px" /></a></figure>
+
+
+
+<figure class="wp-block-image size-large"><a href="https://saar.freifunk.net/wp-content/uploads/2022/03/IMG20220318190833-scaled.jpg"><img loading="lazy" width="768" height="1024" data-id="2155"  src="https://saar.freifunk.net/wp-content/uploads/2022/03/IMG20220318190833-768x1024.jpg" alt="" class="wp-image-2155" srcset="https://saar.freifunk.net/wp-content/uploads/2022/03/IMG20220318190833-768x1024.jpg 768w, https://saar.freifunk.net/wp-content/uploads/2022/03/IMG20220318190833-225x300.jpg 225w, https://saar.freifunk.net/wp-content/uploads/2022/03/IMG20220318190833-1152x1536.jpg 1152w, https://saar.freifunk.net/wp-content/uploads/2022/03/IMG20220318190833-1536x2048.jpg 1536w, https://saar.freifunk.net/wp-content/uploads/2022/03/IMG20220318190833-600x800.jpg 600w, https://saar.freifunk.net/wp-content/uploads/2022/03/IMG20220318190833-scaled.jpg 1920w" sizes="(max-width: 768px) 100vw, 768px" /></a></figure>
+</figure>
+
+
+
+<p>Bericht in den Lokalnachrichten: <a href="https://www.sr.de/sr/home/nachrichten/panorama/erste_ukraine_fluechtlinge_in_saarbruecken_100.html">https://www.sr.de/sr/home/nachrichten/panorama/erste_ukraine_fluechtlinge_in_saarbruecken_100.html</a></p>
+
+
+
+<p></p>
+]]></content:encoded>
+					
+		
+		
+			<source url="https://saar.freifunk.net/saarbruecken/">Freifunk Saarbrücken</source></item>
+<item>
+			<title>WCW 2022 - Call for Participation</title>
+			<link>https://weimarnetz.de/blog/artikel/wcw-2022-call-participation</link>
+			<guid>https://weimarnetz.de/blog/artikel/wcw-2022-call-participation</guid>
+			<pubDate>Thu, 31 Mar 2022 10:00:00 +0000</pubDate>
+			<description>&lt;p&gt;Das nächste WCW rückt näher. In 2 Monaten, vom 27. bis 29. Mai, wollen wir uns in Weimar treffen. Das WCW lebt als Unconference stärker als andere Veranstaltung von eurer Beteiligung.&lt;/p&gt;
+&lt;p&gt;Wie könnt ihr euch einbringen?&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Reicht Programmpunkte oder Vorträge ein. Möchtet ihr, dass wir euren Vortrag aufzeichnen und streamen, nutzt dazu bitte &lt;a href="https://pretalx.freifunktag.de/wireless-community-weekend-2022/cfp"&gt;Pretalx&lt;/a&gt;. Alles andere tragt bitte im Wiki im &lt;a href="https://wiki.freifunk.net/Wireless_Community_Weekend_2022/Timetable"&gt;Timetable&lt;/a&gt; ein.&lt;/li&gt;
+&lt;li&gt;Workshops und andere Sachen, die ihr im Timetable sehen möchtet kommen auch ins Wiki (siehe oben).&lt;/li&gt;
+&lt;li&gt;Gern möchten wir auch eine Teilnahme remote ermöglichen. Das hängt allerdings stark davon ab, ob sich auch dafür Helfende finden. Der Plan ist, dass wir wie beim virtuellen WCW eine Workadventure-Welt mit Jitsi und/oder Big Blue Button nutzen. Die Technik steht, die Welt dafür muss gebaut werden.&lt;/li&gt;
+&lt;li&gt;Vor Ort benötigen wir dann natürlich auch Hilfe. Sei es, um ein paar Dinge aufzubauen, Salate zu schneiden, den Grill zu bedienen, beim Recording und Streaming zu helfen.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Für Übernachtungen haben wir ein 6-Bett-Zimmer im A&amp;amp;O-Hostel Weimar reserviert. Wir können hier einen Zuschuss gewährleisten, so dass 6 Personen für 2 Nächte im günstigsten Fall nur etwa 25 € pro Person bezahlen müssen (ca. 150€ insgesamt).&lt;/p&gt;
+&lt;p&gt;Last but not least: Tragt euch bitte unbedingt im Wiki in die &lt;a href="https://wiki.freifunk.net/Wireless_Community_Weekend_2022/Participants"&gt;Liste der Teilnehmenden&lt;/a&gt; ein, wenn ihr vor Ort teilnehmen möchtet, oder schreibt es uns. Am Veranstaltungsort müssen wir nach heutigem Stand alle Teilnehmenden einladen, damit sie auch die Gebäude betreten dürfen.&lt;/p&gt;
+&lt;p&gt;Wir freuen uns auf euch!&lt;/p&gt;</description>
+		<source url="https://weimarnetz.de">weimarnetz</source></item>
+<item>
+		<title>FFMWU Community Meetup</title>
+		<link>https://blog.freifunk-mainz.de/2022/03/30/ffmwu-community-meetup/</link>
+					<comments>https://blog.freifunk-mainz.de/2022/03/30/ffmwu-community-meetup/#respond</comments>
+		
+		<dc:creator><![CDATA[Lukas]]></dc:creator>
+		<pubDate>Wed, 30 Mar 2022 09:39:40 +0000</pubDate>
+				<category><![CDATA[Allgemein]]></category>
+		<guid isPermaLink="false">https://blog.freifunk-mainz.de/?p=2006</guid>
+
+					<description><![CDATA[Wir laden euch ein zum ersten Community Meetup ab 12.4.2022 um 20:30 Uhr unter https://meet.ffmwu.org/meetup. An dem Abend gibt es Zeit zu plauschen, die Community kennenzulernen. Damit wir auch was lernen und mitnehmen, gibt es ein Rahmenprogramm: Julian erzählt uns etwas zu unserer FirmwareWolfgang präsentiert uns den Aufbau des Backbone von unserem Netz Ihr wollte [&#8230;]]]></description>
+										<content:encoded><![CDATA[
+<p>Wir laden euch ein zum ersten Community Meetup ab 12.4.2022 um 20:30 Uhr unter https://meet.ffmwu.org/meetup.</p>
+
+
+
+<div class="wp-block-image"><figure class="aligncenter size-full"><a href="https://blog.freifunk-mainz.de/wp-content/uploads/2022/03/ffmwu_meetup.png" rel="lightbox[2006]"><img width="498" height="642" src="https://blog.freifunk-mainz.de/wp-content/uploads/2022/03/ffmwu_meetup.png" alt="" class="wp-image-2007" srcset="https://blog.freifunk-mainz.de/wp-content/uploads/2022/03/ffmwu_meetup.png 498w, https://blog.freifunk-mainz.de/wp-content/uploads/2022/03/ffmwu_meetup-233x300.png 233w" sizes="(max-width: 498px) 100vw, 498px" /></a></figure></div>
+
+
+
+<p>An dem Abend gibt es Zeit zu plauschen, die Community kennenzulernen. Damit wir auch was lernen und mitnehmen, gibt es ein Rahmenprogramm:</p>
+
+
+
+<p>Julian erzählt uns etwas zu unserer Firmware<br>Wolfgang präsentiert uns den Aufbau des Backbone von unserem Netz</p>
+
+
+
+<p>Ihr wollte spezielle Dinge zu Firmware oder Backbone wissen? Dann schickt uns vorab eine Nachricht, was euch besonders interessiert.</p>
+
+
+
+<p>Wir freuen uns auf eine rege Teilnahme!</p>
+
+
+
+<p>Julian, Wolfgang und Lukas</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://blog.freifunk-mainz.de/2022/03/30/ffmwu-community-meetup/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			<source url="http://www.freifunk-mainz.de">Freifunk Mainz</source></item>
+<item>
+				<guid isPermaLink="false">news-46</guid>
+				<pubDate>Tue, 29 Mar 2022 10:49:56 +0200</pubDate>
+				<title>Xiaomi 4a Gigabit Edition Support</title>
+				<link>https://regensburg.freifunk.net/news/article/xiaomi-4a-gigabit-edition-support/</link>
+				<description>Mit der immer schwieriger werdenden Unterstützung der alten TP Link 841 Router Serie hat sich nun ein Kandidat aufgetan, der diese Lücke im preislichen lowend Segment sehr gut füllen könnte. Die Specs sind beeindruckend und erste Tests vielversprechend.</description>
+				
+				<content:encoded><![CDATA[<p>Zunächst ein paar Daten:</p>
+<p>&nbsp;</p><pre>
+- SoC:      MediaTek MT7621
+- Flash:    16 MiB NOR SPI
+- RAM:      128 MiB DDR3
+- Ethernet: 3x 10/100/1000 Mbps (switched, 2xLAN + WAN)
+- WIFI0:    MT7603E 2.4GHz 802.11b/g/n
+- WIFI1:    MT7612E 5GHz 802.11ac
+- Antennas: 4x external (2 per radio), non-detachable
+- LEDs:     Programmable &quot;power&quot; LED (two-coloured, yellow/blue)
+            Non-programmable &quot;internet&quot; LED (shows WAN activity)
+- Buttons:  Reset</pre><p>&nbsp;</p>
+<p>Der Flashprozess gestaltet sich mehrstufig. Er besteht aus den folgenden Schritten:</p>
+<p>1. Downgrade auf Version 3.0.24 der Xiaomi Firmware<br /> 2. Per Exploit Tool eine Rootshell holen<br /> 3. Ein OpenWRT SquashFS Image flashen<br /> 4. Per sysupgrade das Freifunk Gluon Image flashen.</p>
+<p>Im Detail sieht das so aus:</p>
+<p>1. Den frisch ausgepackten Router booten. An einer der LAN Schnittstellen hört dieser nach dem booten auf der IP 192.168.31.1. Hier eine Basiskonfiguration durchführen - auch um die Firmware Version zu checken. Sollte diese nicht 3.0.24 sein, kann nach der initialen Konfiguration über das Admin Interface ein Downgrade vorgenommen werden. Eine passende Firmware findet ihr hier: <a href="https://github.com/ffrgb/stockimages/blob/master/xiaomi-4a-gige/miwifi_r4a_all_03233_3.0.24_INT.bin" title="https://github.com/ffrgb/stockimages/blob/master/xiaomi-4a-gige/miwifi_r4a_all_03233_3.0.24_INT.bin" target="_blank">https://github.com/ffrgb/stockimages/blob/master/xiaomi-4a-gige/miwifi_r4a_all_03233_3.0.24_INT.bin</a></p>
+<p>2. Mit <a href="https://github.com/acecilia/OpenWRTInvasion" target="_blank">https://github.com/acecilia/OpenWRTInvasion</a> eine Rootshell holen, mit Telnet auf 192.168.31.1 verifizieren.</p>
+<p>3. Ein OpenWRT squashfs Image für den SoC besorgen. Entweder direkt von <a href="https://downloads.openwrt.org/releases/21.02.0-rc1/targets/ramips/mt7621/" target="_blank">https://downloads.openwrt.org/releases/21.02.0-rc1/targets/ramips/mt7621/</a> oder <a href="https://github.com/ffrgb/stockimages/blob/master/xiaomi-4a-gige/openwrt-21.02.0-rc1-ramips-mt7621-xiaomi_mi-router-4a-gigabit-squashfs-sysupgrade.bin" target="_blank">https://github.com/ffrgb/stockimages/blob/master/xiaomi-4a-gige/openwrt-21.02.0-rc1-ramips-mt7621-xiaomi_mi-router-4a-gigabit-squashfs-sysupgrade.bin</a><br /> Dieses Image dann per FTP auf den router in /tmp schreiben und danach in der rootshell flashen:</p><blockquote><p>root@XiaoQiang:/tmp# mtd -e OS1 -r write openwrt-21.02.0-rc1-ramips-mt7621-xiaomi_mi-router-4a-gigabit-squashfs-sysupgrade.bin OS1<br /> Unlocking OS1 ...<br /> Erasing OS1 ...<br /> Writing from openwrt-21.02.0-rc1-ramips-mt7621-xiaomi_mi-router-4a-gigabit-squashfs-sysupgrade.bin to OS1 ...<br /> Rebooting ...</p></blockquote><p>Danach booted der Router in OpenWRT, und ist unter der IP 192.168.1.1 erreichbar.</p>
+<p>4. Nun per SCP das passende Freifunk Gluon Image auf den Router schieben und per sysupgrade flashen:</p><blockquote><p>root@OpenWrt:/tmp# sysupgrade -n gluon-ffrgb-v2021.1.1\+ffrgb-wg4-xiaomi-mi-router-4a-gigabit-edition-sysupgrade.bin<br /> Tue Mar 29 08:27:13 UTC 2022 upgrade: Commencing upgrade. Closing all shell sessions.</p></blockquote><p>&nbsp;Danach verhält sich der Router wie gewohnt und ist unter 192.168.1.1 im Config Mode erreichbar.<br /> <br /> Leider ist diese Verfahrensweise noch etwas beschwerlich, und nicht für jeden ohne Probleme zu bewerkstelligen, darum gilt die Empfehlung für dieses Routermodell mit Einschränkungen.</p>]]></content:encoded>
+				
+			<source url="https://regensburg.freifunk.net">Freifunk Regensburg e.V.</source></item>
+<item>
+		<title>Freifunker bauen freies WLAN für Geflüchtete im Mainzer Allianzhaus auf</title>
+		<link>https://blog.freifunk-mainz.de/2022/03/28/freifunker-bauen-freies-wlan-fuer-gefluechtete-im-mainzer-allianzhaus-auf/</link>
+					<comments>https://blog.freifunk-mainz.de/2022/03/28/freifunker-bauen-freies-wlan-fuer-gefluechtete-im-mainzer-allianzhaus-auf/#respond</comments>
+		
+		<dc:creator><![CDATA[Florian Altherr]]></dc:creator>
+		<pubDate>Mon, 28 Mar 2022 13:49:56 +0000</pubDate>
+				<category><![CDATA[Allgemein]]></category>
+		<guid isPermaLink="false">https://blog.freifunk-mainz.de/?p=1988</guid>
+
+					<description><![CDATA[In Kooperation mit der Stadt Mainz und den Maltesern als Betreuungsorganisation bauen wir derzeit mit Freifunk ein freies WLAN für die vorm Krieg in der Ukraine geflüchteten Menschen auf, die derzeit im Mainzer Allianzhaus unterkommen. Die Kapazität der Unterkunft liegt bei etwas über 100 BewohnerInnen, bislang wohnen rund 50 Menschen dort, insgesamt unter recht einfachen [&#8230;]]]></description>
+										<content:encoded><![CDATA[
+<p>In Kooperation mit der Stadt Mainz und den Maltesern als Betreuungsorganisation bauen wir derzeit mit Freifunk ein freies WLAN für die vorm Krieg in der Ukraine geflüchteten Menschen auf, die derzeit im Mainzer Allianzhaus unterkommen. </p>
+
+
+
+<figure class="wp-block-gallery has-nested-images columns-default is-cropped">
+<figure class="wp-block-image size-large"><a href="https://blog.freifunk-mainz.de/wp-content/uploads/2022/03/277220662_10160566233768606_6714305663945227230_n.jpg" rel="lightbox[1988]"><img loading="lazy" width="1364" height="1364" data-id="1990"  src="https://blog.freifunk-mainz.de/wp-content/uploads/2022/03/277220662_10160566233768606_6714305663945227230_n.jpg" alt="" class="wp-image-1990" srcset="https://blog.freifunk-mainz.de/wp-content/uploads/2022/03/277220662_10160566233768606_6714305663945227230_n.jpg 1364w, https://blog.freifunk-mainz.de/wp-content/uploads/2022/03/277220662_10160566233768606_6714305663945227230_n-300x300.jpg 300w, https://blog.freifunk-mainz.de/wp-content/uploads/2022/03/277220662_10160566233768606_6714305663945227230_n-1024x1024.jpg 1024w, https://blog.freifunk-mainz.de/wp-content/uploads/2022/03/277220662_10160566233768606_6714305663945227230_n-150x150.jpg 150w, https://blog.freifunk-mainz.de/wp-content/uploads/2022/03/277220662_10160566233768606_6714305663945227230_n-768x768.jpg 768w, https://blog.freifunk-mainz.de/wp-content/uploads/2022/03/277220662_10160566233768606_6714305663945227230_n-624x624.jpg 624w" sizes="(max-width: 1364px) 100vw, 1364px" /></a></figure>
+
+
+
+<figure class="wp-block-image size-large"><a href="https://blog.freifunk-mainz.de/wp-content/uploads/2022/03/277435709_10160566233998606_1904841782554014406_n.jpg" rel="lightbox[1988]"><img loading="lazy" width="1639" height="1639" data-id="1991"  src="https://blog.freifunk-mainz.de/wp-content/uploads/2022/03/277435709_10160566233998606_1904841782554014406_n.jpg" alt="" class="wp-image-1991" srcset="https://blog.freifunk-mainz.de/wp-content/uploads/2022/03/277435709_10160566233998606_1904841782554014406_n.jpg 1639w, https://blog.freifunk-mainz.de/wp-content/uploads/2022/03/277435709_10160566233998606_1904841782554014406_n-300x300.jpg 300w, https://blog.freifunk-mainz.de/wp-content/uploads/2022/03/277435709_10160566233998606_1904841782554014406_n-1024x1024.jpg 1024w, https://blog.freifunk-mainz.de/wp-content/uploads/2022/03/277435709_10160566233998606_1904841782554014406_n-150x150.jpg 150w, https://blog.freifunk-mainz.de/wp-content/uploads/2022/03/277435709_10160566233998606_1904841782554014406_n-768x768.jpg 768w, https://blog.freifunk-mainz.de/wp-content/uploads/2022/03/277435709_10160566233998606_1904841782554014406_n-1536x1536.jpg 1536w, https://blog.freifunk-mainz.de/wp-content/uploads/2022/03/277435709_10160566233998606_1904841782554014406_n-624x624.jpg 624w" sizes="(max-width: 1639px) 100vw, 1639px" /></a></figure>
+
+
+
+<figure class="wp-block-image size-large"><a href="https://blog.freifunk-mainz.de/wp-content/uploads/2022/03/277427076_10160566233948606_2657878027776618077_n.jpg" rel="lightbox[1988]"><img loading="lazy" width="1368" height="1366" data-id="1992"  src="https://blog.freifunk-mainz.de/wp-content/uploads/2022/03/277427076_10160566233948606_2657878027776618077_n.jpg" alt="" class="wp-image-1992" srcset="https://blog.freifunk-mainz.de/wp-content/uploads/2022/03/277427076_10160566233948606_2657878027776618077_n.jpg 1368w, https://blog.freifunk-mainz.de/wp-content/uploads/2022/03/277427076_10160566233948606_2657878027776618077_n-300x300.jpg 300w, https://blog.freifunk-mainz.de/wp-content/uploads/2022/03/277427076_10160566233948606_2657878027776618077_n-1024x1024.jpg 1024w, https://blog.freifunk-mainz.de/wp-content/uploads/2022/03/277427076_10160566233948606_2657878027776618077_n-150x150.jpg 150w, https://blog.freifunk-mainz.de/wp-content/uploads/2022/03/277427076_10160566233948606_2657878027776618077_n-768x767.jpg 768w, https://blog.freifunk-mainz.de/wp-content/uploads/2022/03/277427076_10160566233948606_2657878027776618077_n-624x623.jpg 624w" sizes="(max-width: 1368px) 100vw, 1368px" /></a></figure>
+
+
+
+<figure class="wp-block-image size-large"><a href="https://blog.freifunk-mainz.de/wp-content/uploads/2022/03/277524201_10160566233848606_8821717939817921766_n.jpg" rel="lightbox[1988]"><img loading="lazy" width="1222" height="1221" data-id="1993"  src="https://blog.freifunk-mainz.de/wp-content/uploads/2022/03/277524201_10160566233848606_8821717939817921766_n.jpg" alt="" class="wp-image-1993" srcset="https://blog.freifunk-mainz.de/wp-content/uploads/2022/03/277524201_10160566233848606_8821717939817921766_n.jpg 1222w, https://blog.freifunk-mainz.de/wp-content/uploads/2022/03/277524201_10160566233848606_8821717939817921766_n-300x300.jpg 300w, https://blog.freifunk-mainz.de/wp-content/uploads/2022/03/277524201_10160566233848606_8821717939817921766_n-1024x1024.jpg 1024w, https://blog.freifunk-mainz.de/wp-content/uploads/2022/03/277524201_10160566233848606_8821717939817921766_n-150x150.jpg 150w, https://blog.freifunk-mainz.de/wp-content/uploads/2022/03/277524201_10160566233848606_8821717939817921766_n-768x767.jpg 768w, https://blog.freifunk-mainz.de/wp-content/uploads/2022/03/277524201_10160566233848606_8821717939817921766_n-624x623.jpg 624w" sizes="(max-width: 1222px) 100vw, 1222px" /></a></figure>
+
+
+
+<figure class="wp-block-image size-large"><a href="https://blog.freifunk-mainz.de/wp-content/uploads/2022/03/277500700_10160566234053606_7480542643562070379_n.jpg" rel="lightbox[1988]"><img loading="lazy" width="1131" height="1131" data-id="1994"  src="https://blog.freifunk-mainz.de/wp-content/uploads/2022/03/277500700_10160566234053606_7480542643562070379_n.jpg" alt="" class="wp-image-1994" srcset="https://blog.freifunk-mainz.de/wp-content/uploads/2022/03/277500700_10160566234053606_7480542643562070379_n.jpg 1131w, https://blog.freifunk-mainz.de/wp-content/uploads/2022/03/277500700_10160566234053606_7480542643562070379_n-300x300.jpg 300w, https://blog.freifunk-mainz.de/wp-content/uploads/2022/03/277500700_10160566234053606_7480542643562070379_n-1024x1024.jpg 1024w, https://blog.freifunk-mainz.de/wp-content/uploads/2022/03/277500700_10160566234053606_7480542643562070379_n-150x150.jpg 150w, https://blog.freifunk-mainz.de/wp-content/uploads/2022/03/277500700_10160566234053606_7480542643562070379_n-768x768.jpg 768w, https://blog.freifunk-mainz.de/wp-content/uploads/2022/03/277500700_10160566234053606_7480542643562070379_n-624x624.jpg 624w" sizes="(max-width: 1131px) 100vw, 1131px" /></a></figure>
+
+
+
+<figure class="wp-block-image size-large"><a href="https://blog.freifunk-mainz.de/wp-content/uploads/2022/03/277522389_10160566234123606_7685499548965624224_n.jpg" rel="lightbox[1988]"><img loading="lazy" width="1368" height="1367" data-id="1995"  src="https://blog.freifunk-mainz.de/wp-content/uploads/2022/03/277522389_10160566234123606_7685499548965624224_n.jpg" alt="" class="wp-image-1995" srcset="https://blog.freifunk-mainz.de/wp-content/uploads/2022/03/277522389_10160566234123606_7685499548965624224_n.jpg 1368w, https://blog.freifunk-mainz.de/wp-content/uploads/2022/03/277522389_10160566234123606_7685499548965624224_n-300x300.jpg 300w, https://blog.freifunk-mainz.de/wp-content/uploads/2022/03/277522389_10160566234123606_7685499548965624224_n-1024x1024.jpg 1024w, https://blog.freifunk-mainz.de/wp-content/uploads/2022/03/277522389_10160566234123606_7685499548965624224_n-150x150.jpg 150w, https://blog.freifunk-mainz.de/wp-content/uploads/2022/03/277522389_10160566234123606_7685499548965624224_n-768x767.jpg 768w, https://blog.freifunk-mainz.de/wp-content/uploads/2022/03/277522389_10160566234123606_7685499548965624224_n-624x624.jpg 624w" sizes="(max-width: 1368px) 100vw, 1368px" /></a></figure>
+
+
+
+<figure class="wp-block-image size-large"><a href="https://blog.freifunk-mainz.de/wp-content/uploads/2022/03/277306955_10160566234183606_7526575091662346234_n.jpg" rel="lightbox[1988]"><img loading="lazy" width="1080" height="1271" data-id="1996"  src="https://blog.freifunk-mainz.de/wp-content/uploads/2022/03/277306955_10160566234183606_7526575091662346234_n.jpg" alt="" class="wp-image-1996" srcset="https://blog.freifunk-mainz.de/wp-content/uploads/2022/03/277306955_10160566234183606_7526575091662346234_n.jpg 1080w, https://blog.freifunk-mainz.de/wp-content/uploads/2022/03/277306955_10160566234183606_7526575091662346234_n-255x300.jpg 255w, https://blog.freifunk-mainz.de/wp-content/uploads/2022/03/277306955_10160566234183606_7526575091662346234_n-870x1024.jpg 870w, https://blog.freifunk-mainz.de/wp-content/uploads/2022/03/277306955_10160566234183606_7526575091662346234_n-768x904.jpg 768w, https://blog.freifunk-mainz.de/wp-content/uploads/2022/03/277306955_10160566234183606_7526575091662346234_n-624x734.jpg 624w" sizes="(max-width: 1080px) 100vw, 1080px" /></a></figure>
+
+
+
+<figure class="wp-block-image size-large"><a href="https://blog.freifunk-mainz.de/wp-content/uploads/2022/03/277458008_10160566234278606_7932178666042871452_n.jpg" rel="lightbox[1988]"><img loading="lazy" width="1080" height="1269" data-id="1997"  src="https://blog.freifunk-mainz.de/wp-content/uploads/2022/03/277458008_10160566234278606_7932178666042871452_n.jpg" alt="" class="wp-image-1997" srcset="https://blog.freifunk-mainz.de/wp-content/uploads/2022/03/277458008_10160566234278606_7932178666042871452_n.jpg 1080w, https://blog.freifunk-mainz.de/wp-content/uploads/2022/03/277458008_10160566234278606_7932178666042871452_n-255x300.jpg 255w, https://blog.freifunk-mainz.de/wp-content/uploads/2022/03/277458008_10160566234278606_7932178666042871452_n-871x1024.jpg 871w, https://blog.freifunk-mainz.de/wp-content/uploads/2022/03/277458008_10160566234278606_7932178666042871452_n-768x902.jpg 768w, https://blog.freifunk-mainz.de/wp-content/uploads/2022/03/277458008_10160566234278606_7932178666042871452_n-624x733.jpg 624w" sizes="(max-width: 1080px) 100vw, 1080px" /></a></figure>
+</figure>
+
+
+
+<p></p>
+
+
+
+<p>Die Kapazität der Unterkunft liegt bei etwas über 100 BewohnerInnen, bislang wohnen rund 50 Menschen dort, insgesamt unter recht einfachen Bedingungen. Wir finden: Alle Menschen sollen einen freien Zugang zum Netz haben. Und wir wissen, dass es besonders für Geflüchtete natürlich wichtig ist, sich in dieser Ausnahmesituation informieren und Kontakt mit Angehörigen pflegen zu können, Sprachangebote wahrnehmen zu können auch sonst am digitalen gesellschaftlichen Leben teilhaben zu können. </p>
+
+
+
+<p>Wir freuen uns daher, dass alle Beteiligten hier an einem Strang ziehen und wir gemeinsam ein Freifunk-Netz für die Menschen aufbauen können. Nachdem die bestellte Hardware geliefert wurde, haben Mitch, Sebastian und Florian am Freitag 10 Access Points auf 4 Etagen aufgehängt und im zentralen Technikraum verkabelt. Weil das Gebäude schon vor einigen Jahren als Geflüchtetenunterkunft genutzt wurde, konnten wir auf eine strukturierte Verkabelung im Gebäude zurückgreifen, die die MAG einst professionell setzen ließ, sowie auf die Reste unserer damaligen Grundinstallation, insbesondere einen kleinen Rechner als leistungsfähigen Freifunk-Router. </p>
+
+
+
+<p>Weil der Internetanschluss noch auf sich warten lässt, aber bereits Menschen im Gebäude wohnen, entschieden wir uns spontan, einen LTE-Router einzusetzen, bis Vodafone den breitbandigen Anschluss schaltet. Schon wenige Minuten nach Inbetriebnahme konnten wir die ersten Clients in unsrem Netz beobachten und BewohnerInnen bedankten sich für das freie Netz. </p>
+
+
+
+<p>Mit einer Handyapp prüften wir noch die Ausleuchtung im Gebäude und führten an einigen Stellen Speedtests durch, die durchweg gute Datenraten von über 50 Mbit/s zeigten. Wird die Unterkunft voll besetzt, sind 50 Mbit/s &#8211; je nach Nutzungsverhalten &#8211; wahrscheinlich schnell ausgelastet. Daher freuen wir uns, dass wir im Auftrag der Malteser einen Anschluss mit 1000 MBit/s Downstreamrate bestellen durften. </p>
+
+
+
+<p>In den nächsten Wochen werden wir noch einige Nacharbeiten erledigen und die Installation etwas pflegen müssen. Fürs erste gibt es aber eine durchaus passable Lösung für die Menschen vor Ort. Wer ebenfalls sein Netz mit Geflüchteten teilen mag, findet auf <a rel="noreferrer noopener" href="https://l.facebook.com/l.php?u=http%3A%2F%2Fwww.freifunk.net%2F%3Ffbclid%3DIwAR0nE0CokjpHafI4yecsBRMP0HdEDls2IG073DiH74ChblKaPldHN2xuW3g&amp;h=AT1IywWaG3F69Lw5u3juRZJRpQlKL79QtFMLzRn-Jq1E72XptCIaPwXKpAzDVZx7NzPr-cvMqoYMn6KAg6B-v2fZcxCt2vPxAJB-07N9syLbbyKy1VfvbEjtaamKWr0_MHk2&amp;__tn__=-UK-R&amp;c[0]=AT2Lw8u8k1WmgBxWnNi0Kyw05k5rbbM3aasZ797hHtPfP8x_-T9Q6zjx-geCJbxXdV9BBGU3YqDx90pJfcKVNxPsD59a3j6nOGQOZeg0vn6R5ss6wp1UcfYlS6lHqwxHnlE969yVqwi9IXYaDG1YhYS0_irO3ZU_X7NQQdC6WOFc9Fz4FceqY5DPQIarcXnHNsnTaZQ" target="_blank">www.freifunk.net</a> die jeweilige lokale Freifunk-Community, in der sich viele engagierte Menschen zusammen geschlossen haben.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://blog.freifunk-mainz.de/2022/03/28/freifunker-bauen-freies-wlan-fuer-gefluechtete-im-mainzer-allianzhaus-auf/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			<source url="http://www.freifunk-mainz.de">Freifunk Mainz</source></item>
+<item>
+      <description>Ihr habt Geflüchtete bei euch aufgenommen und wollt sie einfach mit Internet versorgen? Euer Helferkreis betreut geflüchtete Familien in einem Gebäude mit oder ohne Internetanschluss? In eurer Gemeinde wird eine Turnhalle/Leichtbauhalle/Zeltanlage für Flüchtlinge aufgebaut und es wird dringend funktionierendes WLAN benötigt? Wir können helfen! (...)</description>
+      <title>Internet für Flüchtlinge: einfach, schnell, ohne Risiko: Freifunk München - Fragen und Antworten</title>
+      <link>https://ffmuc.net//freifunkmuc/2022/03/25/internet-fuer-fluechtlinge/</link>
+      <pubDate>Fri, 25 Mar 2022 19:00:00 GMT</pubDate>
+      <guid isPermaLink="false">https://ffmuc.net//freifunkmuc/2022/03/25/internet-fuer-fluechtlinge</guid>
+      <category>freifunkmuc</category>
+      <source url="https://ffmuc.net//feed.xml">Freifunk München</source>
+    <source url="https://ffmuc.net/">Freifunk München</source></item>
+<item>
+		<title>Unsere Cloud soll schöner werden</title>
+		<link>https://hamburg.freifunk.net/2022/03/unsere-cloud-soll-schoener-werden.html</link>
+					<comments>https://hamburg.freifunk.net/2022/03/unsere-cloud-soll-schoener-werden.html#respond</comments>
+		
+		<dc:creator><![CDATA[Alexander]]></dc:creator>
+		<pubDate>Wed, 23 Mar 2022 18:17:44 +0000</pubDate>
+				<category><![CDATA[Dienste]]></category>
+		<category><![CDATA[Neuigkeiten]]></category>
+		<guid isPermaLink="false">https://hamburg.freifunk.net/?p=4169</guid>
+
+					<description><![CDATA[Unsere Seafile-Instanz unter cloud.hamburg.freifunk.net ist nun schon eine Weile in Betrieb und auch gut in Benutzung, allerdings werden 32-Bit-Systeme von Seafile nicht mehr offiziell unterstützt. Deshalb haben wir auf modernerer Hardware und größeren Festplatten eine aktuelle Version installiert. Die neue Instanz findest du hier: speicher.hamburg.freifunk.net Die alte Seafile-Instanz wird im Laufe dieses Jahres abgeschaltet werden, [&#8230;]]]></description>
+										<content:encoded><![CDATA[
+<p>Unsere <a rel="noreferrer noopener" href="https://de.wikipedia.org/wiki/Seafile" target="_blank">Seafile</a>-Instanz unter <em>cloud.hamburg.freifunk.net</em> ist nun schon eine Weile in Betrieb und auch gut in Benutzung, allerdings werden 32-Bit-Systeme von Seafile nicht mehr offiziell unterstützt. Deshalb haben wir auf modernerer Hardware und größeren Festplatten eine aktuelle Version installiert.</p>
+
+
+
+<p>Die neue Instanz findest du hier: <a rel="noreferrer noopener" href="https://speicher.hamburg.freifunk.net/" target="_blank">speicher.hamburg.freifunk.net</a></p>
+
+
+
+<p>Die alte Seafile-Instanz wird im Laufe dieses Jahres abgeschaltet werden, daher möchten wir alle Benutzer*innen bitten, ihre Daten ggfs. umzuziehen. Wir werden das mit genug Vorlauf auch noch per Email und Social Media kommunizieren.</p>
+
+
+
+<p>Einige Hinweise:</p>
+
+
+
+<ul><li>Die <a href="https://de.wikipedia.org/wiki/WebDAV" target="_blank" rel="noreferrer noopener">WebDAV</a> URL ist <a rel="noreferrer noopener" href="https://speicher.hamburg.freifunk.net/seafdav" target="_blank">https://speicher.hamburg.freifunk.net/seafdav</a></li><li>Im Web UI ist an einigen Stellen von <em>E-Mail-Adresse oder Benutzername</em> die Rede, es funktioniert allerdings in der Regel nur die E-Mail-Adresse.</li><li>Die Funktionalität für verschlüsselte Bibliotheken hat <a rel="noreferrer noopener" href="https://github.com/haiwen/seafile/issues/350" target="_blank">seit langem bekannte Probleme</a>.</li><li>Wir erstellen von den hochgeladenen Dateien keine Backups!</li></ul>
+
+
+
+<p></p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://hamburg.freifunk.net/2022/03/unsere-cloud-soll-schoener-werden.html/feed</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			<source url="https://hamburg.freifunk.net/">Freifunk Hamburg</source></item>
+<item>
+		<title>Unsere neue Firmware in der Version 1.1.1 steht in den Startlöchern</title>
+		<link>https://freifunk-nordhessen.de/unsere-neue-firmware-in-der-version-1-1-1-steht-in-den-startloechern/</link>
+					<comments>https://freifunk-nordhessen.de/unsere-neue-firmware-in-der-version-1-1-1-steht-in-den-startloechern/#comments</comments>
+		
+		<dc:creator><![CDATA[Andreas Schad]]></dc:creator>
+		<pubDate>Sun, 20 Mar 2022 15:00:27 +0000</pubDate>
+				<category><![CDATA[Allgemein]]></category>
+		<category><![CDATA[Firmware]]></category>
+		<category><![CDATA[Netzerweiterung]]></category>
+		<category><![CDATA[Technik]]></category>
+		<category><![CDATA[Communities]]></category>
+		<category><![CDATA[gluon-v2021.1.1]]></category>
+		<category><![CDATA[LK Hersfeld-Rotenburg]]></category>
+		<category><![CDATA[LK Kassel]]></category>
+		<category><![CDATA[LK Marburg-Biedenkopf]]></category>
+		<category><![CDATA[LK Schwalm-Eder]]></category>
+		<category><![CDATA[LK Waldeck-Frankenberg]]></category>
+		<category><![CDATA[LK Werra-Meißner]]></category>
+		<guid isPermaLink="false">https://freifunk-nordhessen.de/?p=1528</guid>
+
+					<description><![CDATA[An diesem Wochenende haben wir die neue Version der 1.1.1 erstellt und veröffentlicht. Wie bei uns üblich steht sie erst einmal als Experimental Release zur Verfügung und wird dann nach einiger Zeit und erfolgreichen Test als Stable Release veröffentlicht. Als&#46;&#46;&#46;]]></description>
+										<content:encoded><![CDATA[
+<p>An diesem Wochenende haben wir die neue Version der 1.1.1 erstellt und veröffentlicht. Wie bei uns üblich steht sie erst einmal als Experimental Release zur Verfügung und wird dann nach einiger Zeit und erfolgreichen Test als Stable Release veröffentlicht.</p>
+
+
+
+<p>Als technische Änderung setzt unsere Firmware basiert nun auf Gluon v2021.1.1</p>
+
+
+
+<p>Die größere Änderung ist aber die Einführung neuer Communities, mit der wir unsere Region Nordhessen weiter aufgliedern wollen, um einem weiteren Wachstum gerecht werden zu können. Daher haben wir uns entschlossen neben den bestehenden Communities</p>
+
+
+
+<ul><li>Ederbergland</li></ul>
+
+
+
+<ul><li>Bad Arolsen</li></ul>
+
+
+
+<ul><li>Burgwald</li></ul>
+
+
+
+<ul><li>Frankenberg</li></ul>
+
+
+
+<ul><li>Kassel</li></ul>
+
+
+
+<ul><li>Korbach</li></ul>
+
+
+
+<p>die folgenden neuen Communities zu erstellen, um euch die Einordnung eurer Knoten zu erleichtern:</p>
+
+
+
+<ul><li>LK Hersfeld-Rotenburg</li><li>LK Kassel</li><li>LK Marburg-Biedenkopf</li><li>LK Schwalm-Eder</li><li>LK Waldeck-Frankenberg</li><li>LK Werra-Meißner</li></ul>
+
+
+
+<p>Für neue Communities gilt bei uns zunächst eine regionale Zuordnung. <br>Kommunen, die Kooperationsverträge mit uns abschließen, können dann eigene Communities bekommen, da hier zu erwarten ist, dass die Anzahl der Nodes noch stark wachsen wird, so dass wir dann auch für die Stabilität unserer Netze (und nichts anderes sind Communities) durch Segmentierung weiter aufrecht erhalten wollen.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://freifunk-nordhessen.de/unsere-neue-firmware-in-der-version-1-1-1-steht-in-den-startloechern/feed/</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+			<source url="http://www.freifunk-nordhessen.de">Freifunk Nordhessen e.V.</source></item>
+<item>
+		<title>Pegelmessung mit LoRaWAN</title>
+		<link>https://www.neanderfunk.de/pegelmessung-mit-lorawan/</link>
+		
+		<dc:creator><![CDATA[luw]]></dc:creator>
+		<pubDate>Sat, 19 Mar 2022 12:47:47 +0000</pubDate>
+				<category><![CDATA[Allgemein]]></category>
+		<category><![CDATA[Blog]]></category>
+		<category><![CDATA[News]]></category>
+		<category><![CDATA[Projekte]]></category>
+		<category><![CDATA[Technik]]></category>
+		<guid isPermaLink="false">https://www.neanderfunk.de/?p=75763</guid>
+
+					<description><![CDATA[Möglichkeiten von LoRaWAN zur Hochwasserwarnung LoRaWAN (Long Range WAN) ist ein Netzwerkprotokoll für lange Reichweiten. Es ermöglicht energieeffiziente Übertragung kleiner Datenpakete über große Reichweiten in Richtung Internet. Die Architektur des LoRaWAN besteht aus Sensor (am Meßort) <a class="mh-excerpt-more" href="https://www.neanderfunk.de/pegelmessung-mit-lorawan/" title="Pegelmessung mit LoRaWAN">[...]</a>]]></description>
+										<content:encoded><![CDATA[
+<h4><strong>Möglichkeiten von LoRaWAN</strong> zur Hochwasserwarnung</h4>
+
+
+
+<p>LoRaWAN (Long Range WAN) ist ein Netzwerkprotokoll für lange Reichweiten. Es ermöglicht energieeffiziente Übertragung kleiner Datenpakete über große Reichweiten in Richtung Internet. </p>
+
+
+
+<p>Die Architektur des LoRaWAN besteht aus</p>
+
+
+
+<ul><li>Sensor (am Meßort)</li><li>Gateway (in der Gegend, in der Regel auf einem Dach)</li><li>Netzwerkserver (in einem Rechenzentrum)</li><li>Applikation (ebenfalls &#8216;in der Cloud)</li></ul>
+
+
+
+<p>Sensoren sind mit kleiner Rechenleistung und einem Funkmodul zur Übertragung der Daten ausgestattet. Datensätze von wenigen Dutzend oder Hundert Zeichen werden in regelmäßig oder bei festgelegten Ereignissen an das Gateway übermittelt. Umgekehrt kann  Gateway kann wiederum Daten an die Sensoren übertragen, um z.B. Konfigurationsdaten zu ändern.</p>
+
+
+
+<p>Die Daten werden von den Gateways weitergeschickt an einen Netzwerkserver. Dieser übernimmt die geordnete Weiterleitung an die richtige Applikation, sowie die Ver- und Entschlüsselung.</p>
+
+
+
+<p>LoRaWAN überträgt die Daten in Europa im lizenzfreien 868-MHz-Band. Je nach Lage sind Reichweiten bis zu 50 km möglich. Dieses Band kann auch Mauern durchdringen, so dass auch tiefer gelegene Gebäudeteile erreichbar sind. Die Reichweiten reduzieren sich dann jedoch stark.</p>
+
+
+
+<p>Sensoren gibt es für alle erdenklichen Anwendungsfälle: Füllstände, Luftqualität, medizinische Überwachung, Parkplatzmanagement, intelligente Beleuchtung, Abfallmanagement, Wärmesensoren, Durch den geringen Strombedarf der Sensoren ist der Pflegeaufwand zu vernachlässigen. Die Betriebsdauer von einigen Jahren einer Batterie ist die Regel.</p>
+
+
+
+<figure class="wp-block-image size-large is-resized"><img src="https://www.neanderfunk.de/wp-content/uploads/2022/03/Pegelsensor-1024x768.jpg" alt="" class="wp-image-75775" width="456" height="342" srcset="https://www.neanderfunk.de/wp-content/uploads/2022/03/Pegelsensor-1024x768.jpg 1024w, https://www.neanderfunk.de/wp-content/uploads/2022/03/Pegelsensor-300x225.jpg 300w, https://www.neanderfunk.de/wp-content/uploads/2022/03/Pegelsensor-250x188.jpg 250w, https://www.neanderfunk.de/wp-content/uploads/2022/03/Pegelsensor-768x576.jpg 768w, https://www.neanderfunk.de/wp-content/uploads/2022/03/Pegelsensor-678x509.jpg 678w, https://www.neanderfunk.de/wp-content/uploads/2022/03/Pegelsensor-326x245.jpg 326w, https://www.neanderfunk.de/wp-content/uploads/2022/03/Pegelsensor-80x60.jpg 80w, https://www.neanderfunk.de/wp-content/uploads/2022/03/Pegelsensor.jpg 1280w" sizes="(max-width: 456px) 100vw, 456px" /><figcaption><strong>Der Pegelsensor wird im selbstgedrucktem Gehäuse installiert</strong></figcaption></figure>
+
+
+
+<figure class="wp-block-image size-large is-resized"><img loading="lazy" src="https://www.neanderfunk.de/wp-content/uploads/2022/03/LoRaWAN-Gateway-766x1024.jpg" alt="" class="wp-image-75776" width="458" height="612" srcset="https://www.neanderfunk.de/wp-content/uploads/2022/03/LoRaWAN-Gateway-766x1024.jpg 766w, https://www.neanderfunk.de/wp-content/uploads/2022/03/LoRaWAN-Gateway-225x300.jpg 225w, https://www.neanderfunk.de/wp-content/uploads/2022/03/LoRaWAN-Gateway-187x250.jpg 187w, https://www.neanderfunk.de/wp-content/uploads/2022/03/LoRaWAN-Gateway-768x1026.jpg 768w, https://www.neanderfunk.de/wp-content/uploads/2022/03/LoRaWAN-Gateway.jpg 958w" sizes="(max-width: 458px) 100vw, 458px" /><figcaption><strong> Aufgebautes LoRaWAN Gateway</strong></figcaption></figure>
+
+
+
+<h4>Unsere Gedanken</h4>
+
+
+
+<p>Nach der verheerenden Hochwasserkatastrophe Mitte Juli 2021 haben wir Freifunker uns entschlossen, diese Technologie für die Messung von Pegelständen an Flüssen und Bächen in unserer Umgebung zu testen. Ein großer Vorteil der Sensoren ist, dass sie unabhängig von Stromversorgung sind. Solange ein Gateway in Funkreichweite ist können die Daten empfangen werden.<br />Da wir nicht ungefragt Dinge an Brücken befestigten wollten und wir auch Vergleichswerte benötigen, haben wir uns die Unterstützung der Stabsstelle Digitalisierung des Kreises, des Bergisch-Rheinischen Wasserverbandes (BRW) und der Unteren Wasserbehörde geholt. Das Interesse an LoRaWAN beruhte auf Gegenseitigkeit. Bei einem Treffen an &#8220;Grube 7&#8221;, unserem ersten Standort, waren wir 12 Menschen aus den verschiedenen Kompetenzbereichen.</p>
+
+
+
+<figure class="wp-block-image size-large is-resized"><img loading="lazy" src="https://www.neanderfunk.de/wp-content/uploads/2022/03/Sensor-7246_R6-1024x682.jpg" alt="" class="wp-image-75765" width="599" height="399" srcset="https://www.neanderfunk.de/wp-content/uploads/2022/03/Sensor-7246_R6-1024x682.jpg 1024w, https://www.neanderfunk.de/wp-content/uploads/2022/03/Sensor-7246_R6-300x200.jpg 300w, https://www.neanderfunk.de/wp-content/uploads/2022/03/Sensor-7246_R6-250x167.jpg 250w, https://www.neanderfunk.de/wp-content/uploads/2022/03/Sensor-7246_R6-768x512.jpg 768w, https://www.neanderfunk.de/wp-content/uploads/2022/03/Sensor-7246_R6-1536x1024.jpg 1536w, https://www.neanderfunk.de/wp-content/uploads/2022/03/Sensor-7246_R6-272x182.jpg 272w, https://www.neanderfunk.de/wp-content/uploads/2022/03/Sensor-7246_R6.jpg 2000w" sizes="(max-width: 599px) 100vw, 599px" /><figcaption>Hier soll der erste Pegelsensor angebracht werden</figcaption></figure>
+
+
+
+<p>Der Standort ist für eine vergleichende Messung ideal, denn hier sind auch die üblichen Sensoren der Wasserbehörde installiert.</p>
+
+
+
+<figure class="wp-block-image size-large is-resized"><img loading="lazy" src="https://www.neanderfunk.de/wp-content/uploads/2022/03/Pegelsensor-Grube7-768x1024.jpeg" alt="" class="wp-image-75793" width="601" height="801" srcset="https://www.neanderfunk.de/wp-content/uploads/2022/03/Pegelsensor-Grube7-768x1024.jpeg 768w, https://www.neanderfunk.de/wp-content/uploads/2022/03/Pegelsensor-Grube7-225x300.jpeg 225w, https://www.neanderfunk.de/wp-content/uploads/2022/03/Pegelsensor-Grube7-188x250.jpeg 188w, https://www.neanderfunk.de/wp-content/uploads/2022/03/Pegelsensor-Grube7.jpeg 960w" sizes="(max-width: 601px) 100vw, 601px" /><figcaption><strong>Der Pegelsensor wird an der Brücke befestigt.</strong></figcaption></figure>
+
+
+
+<h4>Ergebnisse</h4>
+
+
+
+<p>Der bisher eingerichtete Pegelsensoren bei Grube 7. Zur Visualisierung geben wir die Daten an openSenseMap. Das Bild ist zu seinem Standort verlinkt.</p>
+
+
+
+<div class="wp-block-columns">
+<div class="wp-block-column" style="flex-basis:100%">
+<div class="wp-block-columns">
+<div class="wp-block-column" style="flex-basis:100%">
+<div class="wp-block-columns">
+<div class="wp-block-column" style="flex-basis:50%">
+<figure class="wp-block-image size-large is-resized"><a href="https://opensensemap.org/explore/621fd4b2b527de001b43ba38" target="_blank" rel="noopener"><img loading="lazy" src="https://www.neanderfunk.de/wp-content/uploads/2022/03/Bildschirmfoto-2022-03-19-um-00.01.08-437x1024.png" alt="" class="wp-image-75766" width="353" height="824" srcset="https://www.neanderfunk.de/wp-content/uploads/2022/03/Bildschirmfoto-2022-03-19-um-00.01.08-128x300.png 128w, https://www.neanderfunk.de/wp-content/uploads/2022/03/Bildschirmfoto-2022-03-19-um-00.01.08-107x250.png 107w" sizes="(max-width: 353px) 100vw, 353px" /></a><figcaption><strong>Anklicken wechselt zu den Daten auf openSenseMap</strong></figcaption></figure>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+
+<h4>Wie geht es weiter?</h4>
+
+
+
+<p>Natürlich können wir als kleiner Verein den Ausbau von weiteren Pegelsensoren weder selbst finanzieren, noch die Installation plus der Beantragung der erforderlichen Genehmigung zur Installation übernehmen. Wir bleiben in Kontakt mit Verband und Behörde.</p>
+
+
+
+<p>In jedem Falle würde es uns freuen, wenn aus dieser Initiative ein Mehrwert für die Gesellschaft entsteht. Konkret hier eine öffentlich zugängliche Sicht auf Pegelstände. Bei der Vielfalt der Sensoren und der Technologie LoRaWAN ist da noch Vieles mehr denkbar.</p>
+
+
+
+<p>Gerne nehmen wir Spenden über <a rel="noreferrer noopener" href="https://www.betterplace.org/de/projects/102143?utm_campaign=user_share&amp;utm_medium=ppp_stats&amp;utm_source=Link" target="_blank">Betterplace.org</a> entgegen. Jeder Euro hilft uns dieses sinnvolle Projekt weiter auszubauen.</p>
+]]></content:encoded>
+					
+		
+		
+			<source url="https://www.neanderfunk.de">Freifunk Mettmann</source></item>
+<item>
+      <description>Die aktuelle Welle von Flüchtlingen aus der Ukraine kommt auch in München an. Deshalb haben wir uns entschlossen, Hilfsorganisationen, Vereine und Unterkünfte unbürokratisch zu unterstützen, um den ankommenden Ukrainern eine stabile und gute Anbindung an das Internet zu ermöglichen, denn Internet ist in dieser Situation umso wichtiger und nicht nur ein “nice-to-have”. (...)</description>
+      <title>Freifunk München hilft unbürokratisch Geflüchteten aus der Ukraine</title>
+      <link>https://ffmuc.net//freifunkmuc/2022/03/14/ukraine-unterstuetzung/</link>
+      <pubDate>Mon, 14 Mar 2022 10:00:00 GMT</pubDate>
+      <guid isPermaLink="false">https://ffmuc.net//freifunkmuc/2022/03/14/ukraine-unterstuetzung</guid>
+      <category>freifunkmuc</category>
+      <source url="https://ffmuc.net//feed.xml">Freifunk München</source>
+    <source url="https://ffmuc.net/">Freifunk München</source></item>
+<item>
+		<title>Freifunk-Treffen am 14. März 2022 – virtuell</title>
+		<link>https://freifunk-stuttgart.de/2022/03/13/freifunk-treffen-am-14-maerz-2022-virtuell/</link>
+					<comments>https://freifunk-stuttgart.de/2022/03/13/freifunk-treffen-am-14-maerz-2022-virtuell/#respond</comments>
+		
+		<dc:creator><![CDATA[Wilhelm]]></dc:creator>
+		<pubDate>Sun, 13 Mar 2022 19:05:21 +0000</pubDate>
+				<category><![CDATA[Allgemein]]></category>
+		<category><![CDATA[Freifunk]]></category>
+		<category><![CDATA[monatlich]]></category>
+		<category><![CDATA[montag]]></category>
+		<category><![CDATA[Treffen]]></category>
+		<category><![CDATA[virtuell]]></category>
+		<guid isPermaLink="false">https://freifunk-stuttgart.de/?p=2281</guid>
+
+					<description><![CDATA[Liebe Freifunker*innen, wir treffen uns am 14.02.2022 um 19 Uhr aufgrund der aktuelle Pandemielage wahrscheinlich das letzte Mal virtuell unter https://meet.mars-services.de/ffs Themen, die besprochen werden sollen, können im Etherpad eingetragen werden. Wir freuen uns auf zahlreiches virtuelles Beisammensein.]]></description>
+										<content:encoded><![CDATA[
+<div class="wp-block-image"><figure class="aligncenter"><img width="1024" height="384" src="https://freifunk-stuttgart.de/wp-content/uploads/2019/09/treffen-1024x384.png" alt="" class="wp-image-1655" srcset="https://freifunk-stuttgart.de/wp-content/uploads/2019/09/treffen-1024x384.png 1024w, https://freifunk-stuttgart.de/wp-content/uploads/2019/09/treffen-300x113.png 300w, https://freifunk-stuttgart.de/wp-content/uploads/2019/09/treffen-768x288.png 768w, https://freifunk-stuttgart.de/wp-content/uploads/2019/09/treffen.png 1380w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure></div>
+
+
+
+<p>Liebe Freifunker*innen, wir treffen uns am 14.02.2022 um 19 Uhr aufgrund  der aktuelle  Pandemielage wahrscheinlich das letzte Mal virtuell unter <a href="https://meet.mars-services.de/ffs">https://meet.mars-services.de/ffs</a></p>
+
+
+
+<p>Themen, die besprochen werden sollen, können im <a href="https://pad.freifunk-stuttgart.de/p/ffs-Protokoll-Montagstreffen-2022-03-14">Etherpad </a>eingetragen werden.</p>
+
+
+
+<p>Wir freuen uns auf zahlreiches virtuelles Beisammensein.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://freifunk-stuttgart.de/2022/03/13/freifunk-treffen-am-14-maerz-2022-virtuell/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			<source url="https://freifunk-stuttgart.de">Freifunk Stuttgart</source></item>
+<item>
+		<title>Terminverschiebung: Vorstand lädt zur digitalen Mitgliederversammlung am 01. April ein</title>
+		<link>https://freifunk-nordhessen.de/vorstand-laedt-zur-digitalen-mitgliederversammlung-ein/</link>
+					<comments>https://freifunk-nordhessen.de/vorstand-laedt-zur-digitalen-mitgliederversammlung-ein/#comments</comments>
+		
+		<dc:creator><![CDATA[Andreas Schad]]></dc:creator>
+		<pubDate>Sun, 13 Mar 2022 15:37:12 +0000</pubDate>
+				<category><![CDATA[Verein]]></category>
+		<category><![CDATA[Vereinsleben]]></category>
+		<category><![CDATA[Freifunk]]></category>
+		<category><![CDATA[Freifunk Nordhessen]]></category>
+		<category><![CDATA[Mitgliederversammlung]]></category>
+		<guid isPermaLink="false">https://freifunk-nordhessen.de/?p=1520</guid>
+
+					<description><![CDATA[Liebe Freunde des Freifunk Nordhessen e.V. Hiermit lade ich im Namen des Vorstandes recht herzlich zur unserer diesjährigen Jahreshauptversammlung ein. Da sich leider die Corona-Situation immer noch nicht deutlich gebessert hat, oder vielmehr im Gegenteil die Zahlen so hoch sind,&#46;&#46;&#46;]]></description>
+										<content:encoded><![CDATA[
+<p>Liebe Freunde des Freifunk Nordhessen e.V.</p>
+
+
+
+<p>Hiermit lade ich im Namen des Vorstandes recht herzlich zur unserer diesjährigen Jahreshauptversammlung ein. Da sich leider die Corona-Situation immer noch nicht deutlich gebessert hat, oder vielmehr im Gegenteil die Zahlen so hoch sind, wie nie zuvor, wird die diesjährige Mitgliederversammlung leider wieder nur virtuell stattfinden können.</p>
+
+
+
+<p><strong>Mitgliederversammlung am 01.04.2022 um 20:15 Uhr</strong></p>
+
+
+
+<p>Die Sitzung wird als Teams-Meeting&nbsp;<a href="https://teams.microsoft.com/l/meetup-join/19%3ameeting_NTUyNmExZGQtM2NkNS00Y2YxLTk5N2MtMzgwNTBlNjFmZjM0%40thread.v2/0?context=%7b%22Tid%22%3a%22a5b7d31f-dc8a-49e1-840b-5396aff878a6%22%2c%22Oid%22%3a%22ca77a123-e01d-40b7-a073-ab475e5577ea%22%7d">hier</a>&nbsp;stattfinden.&nbsp;</p>
+
+
+
+<p>Ihr erhaltet aber auch mit der Einladung eine Besprechungsanfrage mit der Meeting-Einladung.</p>
+
+
+
+<p>Der Vorstand schlägt die folgende Tagesordnung vor:</p>
+
+
+
+<ol><li>Begrüßung</li><li>Berichte<ol><li>Bericht des Organisationsvorstandes</li><li>Bericht des Technikvorstandes</li><li>Bericht des Finanzvorstandes</li><li>Bericht der Kassenprüfer</li></ol></li><li>Entlastung des Vorstandes</li><li>Aktuelle Projekte</li><li>Diskussion über die künftige Ausrichtung</li><li>Verschiedenes</li></ol>
+
+
+
+<p>Änderungen an der Tagesordnung sind natürlich nach wie vor möglich bis zum Beginn der Sitzung. Anträge sind dazu bitte spätestens bis zum 25.03.2022 um 20:00 Uhr an <a href="mailto:v&#111;&#114;&#115;t&#97;&#110;&#100;&#64;&#102;r&#101;i&#102;&#117;nk-&#110;&#111;&#114;dh&#101;ss&#101;&#110;&#46;de">vo&#114;&#115;&#116;&#97;&#110;d&#64;fr&#101;&#105;&#102;unk&#45;nor&#100;&#104;&#101;&#115;sen&#46;&#100;e</a> einzureichen.</p>
+
+
+
+<p>Mit freundlichen Grüßen</p>
+
+
+
+<p>Andreas Schad</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://freifunk-nordhessen.de/vorstand-laedt-zur-digitalen-mitgliederversammlung-ein/feed/</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+			<source url="http://www.freifunk-nordhessen.de">Freifunk Nordhessen e.V.</source></item>
+<item>
+		<title>Quartalsbericht</title>
+		<link>https://freifunk-ingolstadt.de/2022/03/13/quartalsbericht/</link>
+		
+		<dc:creator><![CDATA[Freifunk Ingolstadt]]></dc:creator>
+		<pubDate>Sun, 13 Mar 2022 11:15:52 +0000</pubDate>
+				<category><![CDATA[Allgemein]]></category>
+		<guid isPermaLink="false">https://freifunk-ingolstadt.de/?p=2021</guid>
+
+					<description><![CDATA[Was in den letzten Monaten passiert ist: Am 18. Januar haben wir spätabends beim fehlgeschlagenen Versuch, ein neues VPN-Gateway in Betrieb zu nehmen, für knapp zwei Stunden einen großen Teil des Netzes lahmgelegt.Für ITIL-Fans: Unsere Service-Jahresverfügbarkeit sank durch diesen Vorfall von 99,99% auf 99,96%. Am 1.<br><br><a class="more-link" href="https://freifunk-ingolstadt.de/2022/03/13/quartalsbericht/">Weiterlesen</a>]]></description>
+										<content:encoded><![CDATA[
+<p>Was in den letzten Monaten passiert ist:</p>
+
+
+
+<ul><li>Am 18. Januar haben wir spätabends beim fehlgeschlagenen Versuch, ein neues VPN-Gateway in Betrieb zu nehmen, für knapp zwei Stunden einen großen Teil des Netzes lahmgelegt.<br>Für ITIL-Fans: Unsere Service-Jahresverfügbarkeit sank durch diesen Vorfall von 99,99% auf 99,96%.</li><li>Am 1. Februar haben wir einen neuen Versuch unternommen und waren erfolgreich: Wir haben den alten und stromfressende Server &#8222;gw3&#8220; durch einen moderneren und sparsameren Server &#8222;gw5&#8220; ersetzt.</li><li>Auf der <a href="https://map.freifunk-ingolstadt.de/">Freifunk-Karte</a> (bzw. in <a rel="noreferrer noopener" href="https://grafana.freifunk-ingolstadt.de/" target="_blank">Grafana</a>) wurden für den Netzwerk-Traffic der einzelnen Knoten gelegentlich absurd hohe Zahlen angezeigt. Ist repariert.</li><li>Im Februar wurde uns ein großer Karton voller Access Points gespendet. Herzlichen Dank an den großzügigen Spender!</li><li>In den nächsten Wochen beziehen wir neue Räumlichkeiten. Das <a rel="noreferrer noopener" href="https://www.bytewerk.org/" target="_blank">Bytewerk</a>, unser Vereinsheim, zieht von Friedrichshofen in die Innenstadt. Sobald der Umzug abgeschlossen ist und es Corona erlaubt können endlich wieder echte Treffen stattfinden.</li></ul>
+]]></content:encoded>
+					
+		
+		
+			<source url="https://freifunk-ingolstadt.de/">Freifunk Ingolstadt</source></item>
+<item>
+		<title>Freies WLAN für Flüchtlingsunterkünfte</title>
+		<link>https://saar.freifunk.net/freies-wlan-fur-fluchtlingsunterkunfte/</link>
+					<comments>https://saar.freifunk.net/freies-wlan-fur-fluchtlingsunterkunfte/#comments</comments>
+		
+		<dc:creator><![CDATA[KimCM]]></dc:creator>
+		<pubDate>Sat, 12 Mar 2022 16:00:00 +0000</pubDate>
+				<category><![CDATA[Allgemein]]></category>
+		<category><![CDATA[Community]]></category>
+		<category><![CDATA[Saarbrücken]]></category>
+		<guid isPermaLink="false">https://saar.freifunk.net/?p=2125</guid>
+
+					<description><![CDATA["Hunderttausende Menschen haben die Ukraine verlassen, viele Kriegsflüchtlinge suchen auch in Deutschland Schutz."
+
+Die höchste Priorität hat die Grundversorgung mit medizinischer Betreuung, Nahrung und einem warmen Schlafplatz. Darüber hinaus ist ein einfacher und kostenfreier Zugang zum Internet von großer Bedeutung für Geflüchtete.
+
+]]></description>
+										<content:encoded><![CDATA[
+<p>Hunderttausende Menschen haben die Ukraine verlassen, viele Kriegsflüchtlinge suchen auch in Deutschland Schutz.</p>
+
+
+
+<p>In Deutschland ankommende Geflüchtete werden auf Ankerzentren oder Landesaufnahmestellen der Bundesländer verteilt. Da diese zum Teil bereits überfüllt sind, müssen die Kommunen aushelfen. Doch die Suche von Wohnungen und Unterkünften braucht Zeit. Daher werden jetzt möglichst schnell Notunterkünfte hergerichtet. In Saarbrücken werden dazu Turnhallen mit dem Notwendigsten ausgestattet.</p>
+
+
+
+<figure class="wp-block-image size-full"><a href="https://saar.freifunk.net/wp-content/uploads/2022/03/Scharnhorst.png"><img loading="lazy" width="800" height="879" src="https://saar.freifunk.net/wp-content/uploads/2022/03/Scharnhorst.png" alt="" class="wp-image-2130" srcset="https://saar.freifunk.net/wp-content/uploads/2022/03/Scharnhorst.png 800w, https://saar.freifunk.net/wp-content/uploads/2022/03/Scharnhorst-273x300.png 273w, https://saar.freifunk.net/wp-content/uploads/2022/03/Scharnhorst-768x844.png 768w, https://saar.freifunk.net/wp-content/uploads/2022/03/Scharnhorst-600x659.png 600w" sizes="(max-width: 800px) 100vw, 800px" /></a></figure>
+
+
+
+<p>Die höchste Priorität hat die Grundversorgung mit medizinischer Betreuung, Nahrung und einem warmen Schlafplatz. Dies und noch viel mehr wird durch die Stadt und Helferinnen und Helfer der Hilfsorganisationen geleistet.</p>
+
+
+
+<p>Darüber hinaus ist ein einfacher und kostenfreier Zugang zum Internet von großer Bedeutung für Geflüchtete: Angehörige können so einfach über den aktuellen Aufenthaltsort und Gesundheitsstatus informiert werden.  Auch ist die Versorgung mit Nachrichten und der Zugriff auf Informationen über das Internet leicht möglich.</p>
+
+
+
+<p>Wenige Tage nachdem uns die Stadt Saarbrücken per E-Mail an <a href="mailto:freifunk-public@saar.freifunk.net">freifunk-public@saar.freifunk.net</a> um Hilfe gebeten hat, konnten wir die erste Notunterkunft Saarbrückens mit freiem WLAN ausstatten. Die schnelle Umsetzung war nur Dank der unbürokratischen Unterstützung der Helferinnen und Helfern vor Ort, Feuerwehr Saarbrücken, <a href="https://iks.saarbruecken.de/">IKS</a> und Oberbürgermeister Uwe Conradt möglich.</p>
+
+
+
+<p>Herzlichen Dank dafür.</p>
+
+
+
+<p></p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://saar.freifunk.net/freies-wlan-fur-fluchtlingsunterkunfte/feed/</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+			<source url="https://saar.freifunk.net/saarbruecken/">Freifunk Saarbrücken</source></item>
+<item>
+		<title>Treffen Freitag 11.03.2022</title>
+		<link>https://freifunk-suedholstein.de/treffen-freitag-11-03-2022/</link>
+					<comments>https://freifunk-suedholstein.de/treffen-freitag-11-03-2022/#respond</comments>
+		
+		<dc:creator><![CDATA[Grotax]]></dc:creator>
+		<pubDate>Tue, 08 Mar 2022 19:00:00 +0000</pubDate>
+				<category><![CDATA[Treffen]]></category>
+		<category><![CDATA[Freifunk Südholstein]]></category>
+		<guid isPermaLink="false">https://freifunk-suedholstein.de/?p=101639</guid>
+
+					<description><![CDATA[Moin liebe Freifunka, am 11.03.2022 ist es wieder so weit.]]></description>
+										<content:encoded><![CDATA[
+<p>Moin liebe Freifunka,</p>
+
+
+
+<p>am 11.03.2022 ist es wieder so weit.</p>
+
+
+
+<p><strong>20:00, online mit Jitsi</strong><br>auf <a rel="noreferrer noopener" href="https://meet.lug-stormarn.de/FFSH" target="_blank">https://meet.lug-stormarn.de/FFSH</a></p>
+
+
+
+<p>Jitsi ist sehr einfach zu benutzen, du kannst direkt per Browser beitreten, in dem du einfach auf den Link klickst.<br>Du kannst die Fähigkeiten deines Browsers vorher <a rel="noreferrer noopener" href="https://test.webrtc.org/" target="_blank">testen</a>.<br>Alternativ gibt es auch eine App in den üblichen App-Stores.<br><a rel="noreferrer noopener" href="https://play.google.com/store/apps/details?id=org.jitsi.meet" target="_blank">Google Play</a> <br><a rel="noreferrer noopener" href="https://f-droid.org/en/packages/org.jitsi.meet/" target="_blank">F-Droid</a> <br><a rel="noreferrer noopener" href="https://apps.apple.com/us/app/jitsi-meet/id1165103905" target="_blank">Apple App Store</a> <br><br>Egal ob du nun ein Freifunk Experte, Anfänger oder aus einer anderen Community bist, komm gerne vorbei und unterhalte dich mit uns.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://freifunk-suedholstein.de/treffen-freitag-11-03-2022/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			<source url="https://www.freifunk-suedholstein.de">Freifunk Südholstein</source></item>
+<item>
+		<title>Freifunk bietet Unterstützung für Geflüchtete an</title>
+		<link>https://freifunk-ansbach.de/freifunk-bietet-unterstuetzung-fuer-gefluechtete-an/</link>
+					<comments>https://freifunk-ansbach.de/freifunk-bietet-unterstuetzung-fuer-gefluechtete-an/#respond</comments>
+		
+		<dc:creator><![CDATA[Johannes]]></dc:creator>
+		<pubDate>Tue, 08 Mar 2022 10:13:07 +0000</pubDate>
+				<category><![CDATA[Freifunk]]></category>
+		<guid isPermaLink="false">https://freifunk-ansbach.de/?p=3275</guid>
+
+					<description><![CDATA[Liebe Besuchende, als Freifunk Ansbach möchten wir einladen unsere Infrastruktur zu nutzen um die Integration der Geflüchteten, welche in den nächsten Monaten nach Deutschland kommen werden, zu vereinfachen. Ganz konkret geht es uns um die unkomplizierte und rechtssichere Bereitstellung eines Internetzugangs, welcher über Mesh-Router einfach erweiterbar ist. Die Freifunk Infrastruktur ist gemeinnützig anerkannt und kann [&#8230;]]]></description>
+										<content:encoded><![CDATA[<div id="attachment_3276" style="width: 310px" class="wp-caption alignleft"><a href="https://freifunk-ansbach.de/wp-content/uploads/2022/03/DJI_0385.jpg" rel="lightbox[3275]"><img aria-describedby="caption-attachment-3276" class="size-medium wp-image-3276" src="https://freifunk-ansbach.de/wp-content/uploads/2022/03/DJI_0385-300x277.jpg" alt="Freifunk Antenne" width="300" height="277" srcset="https://freifunk-ansbach.de/wp-content/uploads/2022/03/DJI_0385-300x277.jpg 300w, https://freifunk-ansbach.de/wp-content/uploads/2022/03/DJI_0385-768x709.jpg 768w, https://freifunk-ansbach.de/wp-content/uploads/2022/03/DJI_0385.jpg 1175w" sizes="(max-width: 300px) 100vw, 300px" /></a><p id="caption-attachment-3276" class="wp-caption-text">Freifunk Outdoor Access Point</p></div>
+<p>Liebe Besuchende,</p>
+<p>als Freifunk Ansbach möchten wir einladen unsere Infrastruktur zu nutzen um die Integration der Geflüchteten, welche in den nächsten Monaten nach Deutschland kommen werden, zu vereinfachen. Ganz konkret geht es uns um die unkomplizierte und rechtssichere Bereitstellung eines Internetzugangs, welcher über Mesh-Router einfach erweiterbar ist.</p>
+<p>Die Freifunk Infrastruktur ist gemeinnützig anerkannt und kann kostenlos genutzt werden! Wir finanzieren uns über <a href="https://www.betterplace.org/de/projects/33869-freifunk-ansbach">Spenden</a>.</p>
+<p>In den vergangenen Monaten haben wir unsere Infrastruktur auf einen aktuellen Stand gebracht, unterstützen aktuell auf dem Markt kaufbare Hardware und sind per Chat und Mail für Fragen erreichbar.</p>
+<p>Chat: <a href="https://chat.freifunk-ansbach.de">https://chat.freifunk-ansbach.de</a><br />
+Mailingliste: <a href="http://list.freifunk-ansbach.de">http://list.freifunk-ansbach.de</a></p>
+<p>Falls du nicht aus der Region Ansbach kommst, dann kannst du deine lokale Community <a href="https://freifunk.net/wie-mache-ich-mit/community-finden/">hier</a> finden.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://freifunk-ansbach.de/freifunk-bietet-unterstuetzung-fuer-gefluechtete-an/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			<source url="http://www.freifunk-neuendettelsau.de/">Freifunk Neuendettelsau</source></item>
+<item>
+			<title>Jetzt doch: WCW goes Bauhaus - 2022 in Weimar</title>
+			<link>https://weimarnetz.de/blog/artikel/jetzt-doch-wcw-goes-bauhaus-2022-weimar</link>
+			<guid>https://weimarnetz.de/blog/artikel/jetzt-doch-wcw-goes-bauhaus-2022-weimar</guid>
+			<pubDate>Mon, 07 Mar 2022 12:00:00 +0000</pubDate>
+			<description>&lt;p&gt;Das Wireless Community Weekend (WCW) hat 15 Jahre auf der c-base in Berlin und einmal komplett im Cyber stattgefunden. In diesem Jahr nehmen wir einen neuen Anlauf und wollen es vom 27. Mai bis 29. Mai 2022 in Weimar stattfinden lassen.&lt;/p&gt;
+&lt;p&gt;Mit Unterstützung durch den &lt;a href="https://m18.uni-weimar.de/stuko"&gt;Studierendenkonvent&lt;/a&gt; der Bauhaus-Universität Weimar und der studentischen Initiative &lt;a href="https://blog.maschinenraum.tk"&gt;Maschinenraum&lt;/a&gt; können wir das WCW im &lt;a href="https://m18.uni-weimar.de"&gt;Haus der Studierenden&lt;/a&gt; (M18) durchführen.&lt;/p&gt;
+&lt;figure&gt;&lt;center&gt;&lt;img src="https://weimarnetz.de/storage/app/uploads/public/5e5/c3e/10a/5e5c3e10a985a782913499.jpg"&gt;&lt;figcaption&gt;Haus der Studierenden - M18&lt;/figcaption&gt;&lt;/center&gt;&lt;/figure&gt;
+&lt;p&gt;Am WCW beiteiligen sich weiterhin Studierende und Lehrende der &lt;a href="https://hs-nordhausen.de"&gt;Hochschule Nordhausen&lt;/a&gt;, Studierende verschiedener Fakultäten und Initiativen der &lt;a href="https://uni-weimar.de"&gt;Bauhaus-Universität&lt;/a&gt;, die Freifunkcommunities aus Thüringen, die &lt;a href="http://www.evernet-eg.de/"&gt;evernet EG&lt;/a&gt; und der &lt;a href="httpw://weimarnetz.de"&gt;weimarnetz e.V&lt;/a&gt;. Das Weimarnetz knüpft damit an die schon in der Vergangenheit durchgeführten &amp;quot;&lt;a href="https://wireless.subsignal.org/index.php?title=We-funk_05"&gt;we-funk&lt;/a&gt;&amp;quot;-Veranstaltungen an. Der &lt;a href="https://foerderverein.freie-netzwerke.de"&gt;Förderverein freie Netzwerke&lt;/a&gt; e.V. aus Berlin fördert die Veranstaltung ebenfalls. &lt;/p&gt;
+&lt;p&gt;Wie in jedem Jahr könnt ihr bereits vorab Vorschläge zum &lt;a href="https://wiki.freifunk.net/Wireless_Community_Weekend_2022/Timetable"&gt;Programm&lt;/a&gt; machen, das spätestens vor Ort von den Teilnehmer_innen gestaltet wird. Es finden Vorträge, Workshops und durchgehend Hacksessions statt. Die Veranstaltung kostet keinen Eintritt und ist offen für alle Interessierten! Die Anmeldung und Planung des WCW wird wieder im &lt;a href="https://wiki.freifunk.net/Wireless_Community_Weekend_2022"&gt;Wiki&lt;/a&gt; erfolgen. Tragt euch bitte auf der &lt;a href="https://wiki.freifunk.net/Wireless_Community_Weekend_2022/Participants"&gt;Participants&lt;/a&gt;-Seite ein, wenn ihr teilnehmen wollt.
+In unserem &lt;a href="https://matrix.to/#/#wcw22:bau-ha.us"&gt;Matrix-Channel&lt;/a&gt; koordinieren wir die Vorbereitungen. Kommt gern vorbei, wenn ihr helfen möchtet.&lt;/p&gt;
+&lt;p&gt;Leider befinden wir uns immer noch in einer Pandemie, weswegen die Teilnahme am WCW nur unter diesen Bedingungen möglich ist:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Alle Menschen sind geimpft oder genesen und können das nachweisen&lt;/li&gt;
+&lt;li&gt;Wir testen uns täglich&lt;/li&gt;
+&lt;li&gt;In Innenräumen tragen wir Masken&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;In Kürze wird an dieser Stelle auch der Call for Participation veröffentlicht.&lt;/p&gt;</description>
+		<source url="https://weimarnetz.de">weimarnetz</source></item>
+<item>
+		<title>Freifunk bietet Unterstützung für Geflüchtete an #standwithukraine</title>
+		<link>https://freifunk-nordhessen.de/freifunk-bietet-unterstuetzung-fuer-gefluechtete-an-standwithukraine/</link>
+					<comments>https://freifunk-nordhessen.de/freifunk-bietet-unterstuetzung-fuer-gefluechtete-an-standwithukraine/#comments</comments>
+		
+		<dc:creator><![CDATA[Andreas Schad]]></dc:creator>
+		<pubDate>Mon, 07 Mar 2022 11:51:48 +0000</pubDate>
+				<category><![CDATA[Allgemein]]></category>
+		<category><![CDATA[Netzerweiterung]]></category>
+		<category><![CDATA[#geflüchtete]]></category>
+		<category><![CDATA[#westandforukraine]]></category>
+		<category><![CDATA[Ukraine]]></category>
+		<category><![CDATA[Unterstützung]]></category>
+		<guid isPermaLink="false">https://freifunk-nordhessen.de/?p=1511</guid>
+
+					<description><![CDATA[Wir haben heute vormittag die Landkreise in Nordhessen angeschrieben und ihnen Unterstützung für der Versorgung von Geflüchteten mit freiem WLAN angeboten. Hier die E-Mail im Wortlaut: Unterstützung durch Freifunk Nordhessen e.V. für Geflüchtete Sehr geehrter Frau Landrätin Rathgeber,Sehr geehrter Herr&#46;&#46;&#46;]]></description>
+										<content:encoded><![CDATA[
+<p>Wir haben heute vormittag die Landkreise in Nordhessen angeschrieben und ihnen Unterstützung für der Versorgung von Geflüchteten mit freiem WLAN angeboten. Hier die E-Mail im Wortlaut:</p>
+
+
+
+<figure class="wp-block-image size-large"><img width="1024" height="576" src="https://freifunk-nordhessen.de/wp-content/uploads/2022/03/WeStandForUkraine-2-1024x576.jpg" alt="" class="wp-image-1517" srcset="https://freifunk-nordhessen.de/wp-content/uploads/2022/03/WeStandForUkraine-2-1024x576.jpg 1024w, https://freifunk-nordhessen.de/wp-content/uploads/2022/03/WeStandForUkraine-2-300x169.jpg 300w, https://freifunk-nordhessen.de/wp-content/uploads/2022/03/WeStandForUkraine-2-768x432.jpg 768w, https://freifunk-nordhessen.de/wp-content/uploads/2022/03/WeStandForUkraine-2-1536x864.jpg 1536w, https://freifunk-nordhessen.de/wp-content/uploads/2022/03/WeStandForUkraine-2-2048x1151.jpg 2048w, https://freifunk-nordhessen.de/wp-content/uploads/2022/03/WeStandForUkraine-2-720x405.jpg 720w, https://freifunk-nordhessen.de/wp-content/uploads/2022/03/WeStandForUkraine-2-520x292.jpg 520w, https://freifunk-nordhessen.de/wp-content/uploads/2022/03/WeStandForUkraine-2-320x180.jpg 320w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+
+
+
+<p><strong>Unterstützung durch Freifunk Nordhessen e.V. für Geflüchtete</strong></p>
+
+
+
+<p>Sehr geehrter Frau Landrätin Rathgeber,<br>Sehr geehrter Herr Landrat Siebert,<br>Sehr geehrter Herr Landrat van der Horst,<br>Sehr geehrter Herr Landrat Warnecke,<br>Sehr geehrter Herr Erster Kreisbeigeordneter Zachow,<br>Sehr geehrter Herr Oberbürgermeister Geselle,</p>
+
+
+
+<p>als Freifunk Nordhessen e.V. möchten wir Ihnen heute unsere Unterstützung anbieten bei der Integration der Flüchtlinge, die in den nächsten Monaten nach Deutschland kommen werden. Ganz konkret geht es uns um die unkomplizierte und rechtssichere Bereitstellung eines Internetzugangs.</p>
+
+
+
+<p>Unser Verein ist gemeinnützig und betreibt ca. 460 öffentliche WLAN-Zugangspunkte in den Landkreisen Kassel, Waldeck-Frankenberg, Werra-Meißner-Kreis, Schwalm-Eder-Kreis, Hersfeld-Rotenburg und Marburg-Biedenkopf. Dazu kommt noch ein eigenes Netz aus Backbone- und Hintergrundsystemen. Finanziert wird unser Verein aus Kooperationsvereinbarungen mit Städten, Gemeinden und Vereinen sowie aus Mitgliedsbeiträgen und Spenden. Wir sind Teil eines deutschlandweiten Netzwerks aus Freifunkvereinen, die heute bereits&nbsp;<a href="https://www.freifunk-karte.de/">rund 44.000 WLAN Zugangspunkte</a>&nbsp;in ganz Deutschland betreiben.</p>
+
+
+
+<p>Zu unserem konkreten Angebot:&nbsp;</p>
+
+
+
+<p>Angesichts des Krieges in der Ukraine gehen wir davon aus, dass in absehbarer Zeit auch in den nordhessischen Landkreisen viele Flüchtlinge integriert werden wollen. Unser Angebot besteht darin, dass wir den nordhessischen Landkreisen vollständig vorkonfigurierte Freifunk-Router anbieten, die überall dort zum Einsatz kommen können, wo Flüchtlinge im privaten Umfeld einquartiert werden. Die von uns bereitgestellten Freifunk-Router können vom Landkreis nach eigenem Ermessen an die Vermieter ausgegeben werden – sei es entgeltlich oder unentgeltlich.&nbsp;</p>
+
+
+
+<p>Der Vermieter einer Unterkunft muss diesen Freifunk-Router dann nur noch mit dem bestehenden Internetanschluss per beiliegendem Kabel verbinden – und mit einem Handgriff entsteht ein rechtssicheres Gäste-WLAN, bei dem keine Störerhaftung anfällt. Eine bebilderte Anleitung legen wir bei, ein E-Mailpostfach für Supportanfragen halten wir ebenfalls bereit.</p>
+
+
+
+<p>Neben dem Wegfall der Störerhaftung sind unsere WLAN-Router in der Art konfiguriert, dass sie sich automatisch miteinander verbinden. Wird beispielsweise eine Flüchtlingsfamilie in einem Nebengebäude oder eine Etage ohne Internetanschluss unterbracht, reicht es aus, zwei unserer WLAN-Router aufzustellen, um das Problem zu lösen. Router 1 steht beim bisherigen Internetanschluss, Router 2 im Nebengebäude bzw. der anderen Etage. Sobald eine Funkverbindung zwischen beiden Geräten zustande kommt, wird automatisch das WLAN weitergereicht.</p>
+
+
+
+<p>Die von uns für die Landkreise bereitgestellten Freifunk-Router basieren auf handelsüblicher Hardware und sind für Innenräume geeignet. Die Geräte werden von uns für mindestens drei Jahre mit Sicherheitsupdates versorgt und sind ansonsten aus Sicht des Aufstellers komplett wartungsfrei. Den geplanten Gerätetyp (TP Link Archer C7) nutzt unser Verein erfolgreich seit dem Jahr 2019.</p>
+
+
+
+<p>Pro Gerät fallen einmalige Kosten in Höhe von 100€ an, die der Verein dem Landkreis in Rechnung stellt. Im Gegenzug stellt der Verein das Gerät für die Dauer von drei Jahren bereit und übernimmt den Support wie oben beschrieben. Die laufenden Internet- und Stromkosten werden vom Vermieter des jeweiligen Quartiers getragen.&nbsp;</p>
+
+
+
+<p>Nach Ablauf der drei Jahre ist zu klären, ob die Geräte weiter betrieben werden sollen. Derzeit veranschlagen wir 20€ pro Jahr und Gerät für die Pflege- und Betriebskosten. Ist kein Weiterbetrieb gewünscht, geht das Gerät an den Verein zurück oder wird deaktiviert. Es steht dem Landkreis frei, dieses Angebot auch auf andere Zielgruppen zu übertragen – beispielsweise im Umfeld des Sozialamts, der Jugendhilfe oder des Schulträgers.</p>
+
+
+
+<p>Wenn Sie unser Angebot annehmen möchten, teilen Sie uns bitte&nbsp;<strong>bis zum 16. März 2022</strong>&nbsp;per E-Mail an&nbsp;<a href="mailto:&#118;&#111;r&#115;t&#97;&#110;d&#64;&#102;re&#105;&#102;unk-n&#111;&#114;dh&#101;&#115;&#115;en&#46;d&#101;">&#118;&#111;&#114;&#115;tand&#64;fr&#101;&#105;f&#117;n&#107;-&#110;&#111;&#114;dhess&#101;n&#46;&#100;e</a>&nbsp;mit, wie viele Freifunk-Router Ihr Landkreis benötigt. Die Bereitstellung der Geräte erfolgt Mitte April 2022. Bitte haben Sie Verständnis dafür, dass wir bis dahin höchstens 100 Geräte pro Landkreis bereitstellen können.</p>
+
+
+
+<p>Zu unserem Angebot gibt es am Freitag,&nbsp;<strong>den 11. März 2022, um 14.30 Uhr eine virtuelle Fragestunde</strong>&nbsp;für die Landkreise in unserem Einzugsgebiet. Wenn Sie bzw. Ihre Mitarbeiter an diesem Treffen teilnehmen wollen, melden Sie sich bitte unter oben genannter E-Mailadresse an. Wir senden Ihnen dann eine Einladung für eine Sitzung mit Microsoft Teams zu.</p>
+
+
+
+<p>Auf unserer Homepage&nbsp;<a href="http://www.freifunk-nordhessen.de">www.freifunk-nordhessen.de</a>&nbsp;erfahren Sie außerdem aus erster Hand, was der Freifunk Nordhessen e.V. bereits heute für die digitale Teilhabe in Nordhessen unternimmt. Dort finden sich bestimmt auch Anknüpfungspunkte für weitere Projekte in Ihrer Region.</p>
+
+
+
+<p>Wir freuen uns, von Ihnen zu hören.</p>
+
+
+
+<p>Mit freundlichen Grüßen,</p>
+
+
+
+<p><em>Andreas Schad, Bad Arolsen<br></em>Organisationsvorstand</p>
+
+
+
+<p><em>Jörg Balzer, Wetter<br></em>Finanzvorstand</p>
+
+
+
+<p><em>Mirsad Nadarevic, Frankenberg<br></em>Technikvorstand</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://freifunk-nordhessen.de/freifunk-bietet-unterstuetzung-fuer-gefluechtete-an-standwithukraine/feed/</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+			<source url="http://www.freifunk-nordhessen.de">Freifunk Nordhessen e.V.</source></item>
+<item>
+		<title>Stadt Bad Arolsen nimmt ersten Freifunk-Knoten in der Bürgerhalle Helsen in Betrieb</title>
+		<link>https://freifunk-nordhessen.de/stadt-bad-arolsen-nimmt-ersten-freifunk-knoten-in-der-buergerhalle-helsen-in-betrieb/</link>
+					<comments>https://freifunk-nordhessen.de/stadt-bad-arolsen-nimmt-ersten-freifunk-knoten-in-der-buergerhalle-helsen-in-betrieb/#comments</comments>
+		
+		<dc:creator><![CDATA[Andreas Schad]]></dc:creator>
+		<pubDate>Mon, 07 Mar 2022 08:30:59 +0000</pubDate>
+				<category><![CDATA[Bad Arolsen]]></category>
+		<category><![CDATA[Community]]></category>
+		<category><![CDATA[Netzerweiterung]]></category>
+		<category><![CDATA[Barrierefreies WLAN]]></category>
+		<category><![CDATA[Bürgerhalle]]></category>
+		<category><![CDATA[Dorfgemeinschaftshaus]]></category>
+		<category><![CDATA[Freifunk]]></category>
+		<category><![CDATA[Kommune]]></category>
+		<category><![CDATA[Kooperation]]></category>
+		<guid isPermaLink="false">https://freifunk-nordhessen.de/?p=1494</guid>
+
+					<description><![CDATA[Nachdem bereits seit Weihnachten 2020 die Hessische Erstaufnahme-Einrichtung auf dem Hagen mit Freifunk versorgt wird, konnte in der vergangenen Woche das erste Objekt in Städtischer Hand mit Freifunk versorgt werden. Im Zuge der Sanierung der Bürgerhalle Helsen wurde diese nun&#46;&#46;&#46;]]></description>
+										<content:encoded><![CDATA[
+<p>Nachdem bereits seit Weihnachten 2020 die Hessische Erstaufnahme-Einrichtung auf dem Hagen mit Freifunk versorgt wird, konnte in der vergangenen Woche das erste Objekt in Städtischer Hand mit Freifunk versorgt werden. Im Zuge der Sanierung der Bürgerhalle Helsen wurde diese nun flächendeckend mit WLAN über Freifunk versorgt. Dies ist das erste Objekt, wo die Kooperation zwischen Stadt und Freifunk Nordhessen e.V. umgesetzt wurde. Weitere Gebäude wie z.B. die Twisteseehalle in Wetterburg und die Stadthalle in Mengeringhausen sind ebenfalls in der Realisierung, sobald die Sanierungen dort abgeschlossen sind.</p>
+
+
+
+<figure class="wp-block-gallery has-nested-images columns-default is-cropped">
+<figure class="wp-block-image size-large"><img loading="lazy" width="1024" height="768" data-id="1496"  src="https://freifunk-nordhessen.de/wp-content/uploads/2022/03/signal-2022-03-04-162223_002-1-1024x768.jpeg" alt="" class="wp-image-1496" srcset="https://freifunk-nordhessen.de/wp-content/uploads/2022/03/signal-2022-03-04-162223_002-1-1024x768.jpeg 1024w, https://freifunk-nordhessen.de/wp-content/uploads/2022/03/signal-2022-03-04-162223_002-1-300x225.jpeg 300w, https://freifunk-nordhessen.de/wp-content/uploads/2022/03/signal-2022-03-04-162223_002-1-768x576.jpeg 768w, https://freifunk-nordhessen.de/wp-content/uploads/2022/03/signal-2022-03-04-162223_002-1-1536x1152.jpeg 1536w, https://freifunk-nordhessen.de/wp-content/uploads/2022/03/signal-2022-03-04-162223_002-1-720x540.jpeg 720w, https://freifunk-nordhessen.de/wp-content/uploads/2022/03/signal-2022-03-04-162223_002-1-520x390.jpeg 520w, https://freifunk-nordhessen.de/wp-content/uploads/2022/03/signal-2022-03-04-162223_002-1-320x240.jpeg 320w, https://freifunk-nordhessen.de/wp-content/uploads/2022/03/signal-2022-03-04-162223_002-1.jpeg 2048w" sizes="(max-width: 1024px) 100vw, 1024px" /><figcaption>Die Aufkleber weisen auf das neue WLAN-Angebot hin</figcaption></figure>
+
+
+
+<figure class="wp-block-image size-large"><img loading="lazy" width="1024" height="768" data-id="1497"  src="https://freifunk-nordhessen.de/wp-content/uploads/2022/03/signal-2022-03-04-162223_003-1024x768.jpeg" alt="" class="wp-image-1497" srcset="https://freifunk-nordhessen.de/wp-content/uploads/2022/03/signal-2022-03-04-162223_003-1024x768.jpeg 1024w, https://freifunk-nordhessen.de/wp-content/uploads/2022/03/signal-2022-03-04-162223_003-300x225.jpeg 300w, https://freifunk-nordhessen.de/wp-content/uploads/2022/03/signal-2022-03-04-162223_003-768x576.jpeg 768w, https://freifunk-nordhessen.de/wp-content/uploads/2022/03/signal-2022-03-04-162223_003-1536x1152.jpeg 1536w, https://freifunk-nordhessen.de/wp-content/uploads/2022/03/signal-2022-03-04-162223_003-720x540.jpeg 720w, https://freifunk-nordhessen.de/wp-content/uploads/2022/03/signal-2022-03-04-162223_003-520x390.jpeg 520w, https://freifunk-nordhessen.de/wp-content/uploads/2022/03/signal-2022-03-04-162223_003-320x240.jpeg 320w, https://freifunk-nordhessen.de/wp-content/uploads/2022/03/signal-2022-03-04-162223_003.jpeg 2048w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+
+
+
+<figure class="wp-block-image size-large"><img loading="lazy" width="1024" height="768" data-id="1499"  src="https://freifunk-nordhessen.de/wp-content/uploads/2022/03/signal-2022-03-04-162223_004-1024x768.jpeg" alt="" class="wp-image-1499" srcset="https://freifunk-nordhessen.de/wp-content/uploads/2022/03/signal-2022-03-04-162223_004-1024x768.jpeg 1024w, https://freifunk-nordhessen.de/wp-content/uploads/2022/03/signal-2022-03-04-162223_004-300x225.jpeg 300w, https://freifunk-nordhessen.de/wp-content/uploads/2022/03/signal-2022-03-04-162223_004-768x576.jpeg 768w, https://freifunk-nordhessen.de/wp-content/uploads/2022/03/signal-2022-03-04-162223_004-1536x1152.jpeg 1536w, https://freifunk-nordhessen.de/wp-content/uploads/2022/03/signal-2022-03-04-162223_004-720x540.jpeg 720w, https://freifunk-nordhessen.de/wp-content/uploads/2022/03/signal-2022-03-04-162223_004-520x390.jpeg 520w, https://freifunk-nordhessen.de/wp-content/uploads/2022/03/signal-2022-03-04-162223_004-320x240.jpeg 320w, https://freifunk-nordhessen.de/wp-content/uploads/2022/03/signal-2022-03-04-162223_004.jpeg 2048w" sizes="(max-width: 1024px) 100vw, 1024px" /><figcaption>Accesspoint im Foyer der Bürgerhalle Helsen</figcaption></figure>
+
+
+
+<figure class="wp-block-image size-large"><img loading="lazy" width="1024" height="768" data-id="1500"  src="https://freifunk-nordhessen.de/wp-content/uploads/2022/03/signal-2022-03-04-162223_005-1024x768.jpeg" alt="" class="wp-image-1500" srcset="https://freifunk-nordhessen.de/wp-content/uploads/2022/03/signal-2022-03-04-162223_005-1024x768.jpeg 1024w, https://freifunk-nordhessen.de/wp-content/uploads/2022/03/signal-2022-03-04-162223_005-300x225.jpeg 300w, https://freifunk-nordhessen.de/wp-content/uploads/2022/03/signal-2022-03-04-162223_005-768x576.jpeg 768w, https://freifunk-nordhessen.de/wp-content/uploads/2022/03/signal-2022-03-04-162223_005-1536x1152.jpeg 1536w, https://freifunk-nordhessen.de/wp-content/uploads/2022/03/signal-2022-03-04-162223_005-720x540.jpeg 720w, https://freifunk-nordhessen.de/wp-content/uploads/2022/03/signal-2022-03-04-162223_005-520x390.jpeg 520w, https://freifunk-nordhessen.de/wp-content/uploads/2022/03/signal-2022-03-04-162223_005-320x240.jpeg 320w, https://freifunk-nordhessen.de/wp-content/uploads/2022/03/signal-2022-03-04-162223_005.jpeg 2048w" sizes="(max-width: 1024px) 100vw, 1024px" /><figcaption>Hier in der Halle sind zwei Accesspoints zentral unter der Decke montiert</figcaption></figure>
+</figure>
+
+
+
+<p>In der Bürgerhalle Helsen wurden aktuell insgesamt vier leistungsstarke Accespoints mit einem Router verbaut. Hier geht es zu dem Link auf unserer Freifunk-Karte, auf der man sich anschauen kann, wo überall Freifunk zur Verfügung gestellt wird: <a href="https://map.freifunk-nordhessen.de/#!/de/map/7483c2fdcefe">https://map.freifunk-nordhessen.de/#!/de/map/7483c2fdcefe</a></p>
+
+
+
+<h2>Freifunk auf dem Kirchplatz</h2>
+
+
+
+<p>Ebenfalls in Betrieb genommen wurde der Freifunk-Hotspot am Kirchplatz, für den die Familie Franke in ihrem Geschäft, der Wohlkultur GmbH ( <a rel="noreferrer noopener" href="http://wohnkultur-badarolsen.de/" data-type="URL" data-id="http://wohnkultur-badarolsen.de/" target="_blank">http://wohnkultur-badarolsen.de/ </a>) ihren Internetzugang bereit stellt. So ist Freifunk jetzt auch auf einem Großteil des zentralen Kirchplatzes zu empfangen. Vielen Dank für die Bereitstellung des Internetzuganges.</p>
+
+
+
+<figure class="wp-block-gallery has-nested-images columns-default is-cropped">
+<figure class="wp-block-image size-large"><img loading="lazy" width="1024" height="768" data-id="1507"  src="https://freifunk-nordhessen.de/wp-content/uploads/2022/03/signal-2022-03-05-111921_001-1024x768.jpeg" alt="" class="wp-image-1507" srcset="https://freifunk-nordhessen.de/wp-content/uploads/2022/03/signal-2022-03-05-111921_001-1024x768.jpeg 1024w, https://freifunk-nordhessen.de/wp-content/uploads/2022/03/signal-2022-03-05-111921_001-300x225.jpeg 300w, https://freifunk-nordhessen.de/wp-content/uploads/2022/03/signal-2022-03-05-111921_001-768x576.jpeg 768w, https://freifunk-nordhessen.de/wp-content/uploads/2022/03/signal-2022-03-05-111921_001-1536x1152.jpeg 1536w, https://freifunk-nordhessen.de/wp-content/uploads/2022/03/signal-2022-03-05-111921_001-720x540.jpeg 720w, https://freifunk-nordhessen.de/wp-content/uploads/2022/03/signal-2022-03-05-111921_001-520x390.jpeg 520w, https://freifunk-nordhessen.de/wp-content/uploads/2022/03/signal-2022-03-05-111921_001-320x240.jpeg 320w, https://freifunk-nordhessen.de/wp-content/uploads/2022/03/signal-2022-03-05-111921_001.jpeg 2048w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+
+
+
+<figure class="wp-block-image size-large"><img loading="lazy" width="1024" height="768" data-id="1506"  src="https://freifunk-nordhessen.de/wp-content/uploads/2022/03/signal-2022-03-05-111921_002-1024x768.jpeg" alt="" class="wp-image-1506" srcset="https://freifunk-nordhessen.de/wp-content/uploads/2022/03/signal-2022-03-05-111921_002-1024x768.jpeg 1024w, https://freifunk-nordhessen.de/wp-content/uploads/2022/03/signal-2022-03-05-111921_002-300x225.jpeg 300w, https://freifunk-nordhessen.de/wp-content/uploads/2022/03/signal-2022-03-05-111921_002-768x576.jpeg 768w, https://freifunk-nordhessen.de/wp-content/uploads/2022/03/signal-2022-03-05-111921_002-1536x1152.jpeg 1536w, https://freifunk-nordhessen.de/wp-content/uploads/2022/03/signal-2022-03-05-111921_002-720x540.jpeg 720w, https://freifunk-nordhessen.de/wp-content/uploads/2022/03/signal-2022-03-05-111921_002-520x390.jpeg 520w, https://freifunk-nordhessen.de/wp-content/uploads/2022/03/signal-2022-03-05-111921_002-320x240.jpeg 320w, https://freifunk-nordhessen.de/wp-content/uploads/2022/03/signal-2022-03-05-111921_002.jpeg 2048w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+
+
+
+<figure class="wp-block-image size-large"><img loading="lazy" width="1024" height="768" data-id="1503"  src="https://freifunk-nordhessen.de/wp-content/uploads/2022/03/signal-2022-03-05-111921_003-1024x768.jpeg" alt="" class="wp-image-1503" srcset="https://freifunk-nordhessen.de/wp-content/uploads/2022/03/signal-2022-03-05-111921_003-1024x768.jpeg 1024w, https://freifunk-nordhessen.de/wp-content/uploads/2022/03/signal-2022-03-05-111921_003-300x225.jpeg 300w, https://freifunk-nordhessen.de/wp-content/uploads/2022/03/signal-2022-03-05-111921_003-768x576.jpeg 768w, https://freifunk-nordhessen.de/wp-content/uploads/2022/03/signal-2022-03-05-111921_003-1536x1152.jpeg 1536w, https://freifunk-nordhessen.de/wp-content/uploads/2022/03/signal-2022-03-05-111921_003-720x540.jpeg 720w, https://freifunk-nordhessen.de/wp-content/uploads/2022/03/signal-2022-03-05-111921_003-520x390.jpeg 520w, https://freifunk-nordhessen.de/wp-content/uploads/2022/03/signal-2022-03-05-111921_003-320x240.jpeg 320w, https://freifunk-nordhessen.de/wp-content/uploads/2022/03/signal-2022-03-05-111921_003.jpeg 2048w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+
+
+
+<figure class="wp-block-image size-large"><img loading="lazy" width="1024" height="768" data-id="1505"  src="https://freifunk-nordhessen.de/wp-content/uploads/2022/03/signal-2022-03-05-111921_005-1024x768.jpeg" alt="" class="wp-image-1505" srcset="https://freifunk-nordhessen.de/wp-content/uploads/2022/03/signal-2022-03-05-111921_005-1024x768.jpeg 1024w, https://freifunk-nordhessen.de/wp-content/uploads/2022/03/signal-2022-03-05-111921_005-300x225.jpeg 300w, https://freifunk-nordhessen.de/wp-content/uploads/2022/03/signal-2022-03-05-111921_005-768x576.jpeg 768w, https://freifunk-nordhessen.de/wp-content/uploads/2022/03/signal-2022-03-05-111921_005-1536x1152.jpeg 1536w, https://freifunk-nordhessen.de/wp-content/uploads/2022/03/signal-2022-03-05-111921_005-720x540.jpeg 720w, https://freifunk-nordhessen.de/wp-content/uploads/2022/03/signal-2022-03-05-111921_005-520x390.jpeg 520w, https://freifunk-nordhessen.de/wp-content/uploads/2022/03/signal-2022-03-05-111921_005-320x240.jpeg 320w, https://freifunk-nordhessen.de/wp-content/uploads/2022/03/signal-2022-03-05-111921_005.jpeg 2048w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+</figure>
+
+
+
+<p>Hier sehen Sie, wie der neue Freifunk-Knoten angenommen wird: <a href="https://map.freifunk-nordhessen.de/#!/de/map/68d79ac9cc97" data-type="URL" data-id="https://map.freifunk-nordhessen.de/#!/de/map/68d79ac9cc97" target="_blank" rel="noreferrer noopener">https://map.freifunk-nordhessen.de/#!/de/map/68d79ac9cc97</a><br><br>Wenn auch Sie bereit sind, ihren Internetanschluss zu teilen und so Gästen und Besuchern einen barrierefreien Internetzugang zur Verfügung zu stellen, melden Sie sich gerne bei unserem Vorstand unter <a rel="noreferrer noopener" href="mailto:&#118;o&#114;s&#116;&#97;&#110;d&#64;&#102;re&#105;f&#117;&#110;&#107;&#45;&#110;o&#114;&#100;h&#101;&#115;&#115;&#101;n.de" target="_blank">&#118;&#111;rs&#116;an&#100;&#64;fr&#101;&#105;&#102;&#117;&#110;&#107;&#45;&#110;ord&#104;&#101;&#115;&#115;&#101;&#110;.&#100;&#101;</a>.  </p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://freifunk-nordhessen.de/stadt-bad-arolsen-nimmt-ersten-freifunk-knoten-in-der-buergerhalle-helsen-in-betrieb/feed/</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+			<source url="http://www.freifunk-nordhessen.de">Freifunk Nordhessen e.V.</source></item>
+<item>
+		<title>Firmware Release v4.8.0-stable-20220303</title>
+		<link>https://ffm.freifunk.net/2022/03/03/firmware-release-v4-8-0-stable-20220303/</link>
+					<comments>https://ffm.freifunk.net/2022/03/03/firmware-release-v4-8-0-stable-20220303/#comments</comments>
+		
+		<dc:creator><![CDATA[Igor]]></dc:creator>
+		<pubDate>Thu, 03 Mar 2022 15:13:33 +0000</pubDate>
+				<category><![CDATA[Firmware]]></category>
+		<category><![CDATA[Gluon]]></category>
+		<guid isPermaLink="false">https://ffm.freifunk.net/?p=3898</guid>
+
+					<description><![CDATA[Nachdem unsere Infrastruktur wieder funktioniert, gibt es auch eine neue Firmware (Welche im GitLab gebaut wird. Link zum Release und wie immer im Firmware Wizard).Änderungen sind: Gluon v2021.1.1 [1] &#38; <a class="more-link" href="https://ffm.freifunk.net/2022/03/03/firmware-release-v4-8-0-stable-20220303/">weiterlesen...</a>]]></description>
+										<content:encoded><![CDATA[
+<p>Nachdem unsere Infrastruktur wieder funktioniert, gibt es auch eine neue <a rel="noreferrer noopener" href="https://firmware.ffffm.net/archive/stable/gluon-ffffm-v4.8.0-stable-20220303/" data-type="URL" data-id="https://firmware.ffffm.net/archive/stable/gluon-ffffm-v4.8.0-stable-20220303/" target="_blank">Firmware</a> (Welche im <a rel="noreferrer noopener" href="https://chaos.expert/FFFFM/site" target="_blank">GitLab</a> gebaut wird. Link zum <a rel="noreferrer noopener" href="https://chaos.expert/FFFFM/site/-/releases/v4.8.0-stable-20220303" data-type="URL" data-id="https://chaos.expert/FFFFM/site/-/releases/v4.8.0-stable-20220303" target="_blank">Release</a> und wie immer im <a href="https://firmware.ffffm.net/" data-type="URL" data-id="https://firmware.ffffm.net/" target="_blank" rel="noreferrer noopener">Firmware Wizard</a>).<br>Änderungen sind:</p>
+
+
+
+<ul><li>Gluon v2021.1.1 <a href="https://gluon.readthedocs.io/en/latest/releases/v2021.1.1.html" target="_blank" rel="noreferrer noopener">[1]</a> &amp; <a href="https://gluon.readthedocs.io/en/latest/releases/v2021.1.html" target="_blank" rel="noreferrer noopener">[2]</a></li><li>Das alte Legacy IPv6 Prefix wird nicht mehr verwendet</li><li>Ändern der Outdoor 5 GHz Kanäle von 100-140 auf 100-116 132-140 um Kollisionen mit dem Wetterradar zu verhindern</li><li>Umstellen der verwendeten DNS Server auf das neue IPv6 Prefix</li><li>Deaktivieren des DNS Cachings auf dem Router (wird bereits nicht verwendet)</li><li>Ersetzen des Jenkins Signier-Keys durch einen generischen CI Key</li><li>Anpassen des Versionsformat um auch das Jahr zu beinhalten</li><li>Entfernen von mbedtls da openssl bereits auf den Routern vorhanden ist</li></ul>
+
+
+
+<p>Neu unterstützte Geräte: netgear-ex3700, netgear-ex3800, plasma-cloud-pa1200, plasma-cloud-pa2200, plasma-cloud-pa300, plasma-cloud-pa300e, avm-fritz-box-7530, gl.inet-gl-usb150, joy-it-jt-or750i, xiaomi-mi-router-4a-100m-edition</p>
+
+
+
+<p>Nicht mehr supportete Hardware:<br>lemaker-banana-pi, ubiquiti-rocket-m5, vocore-16M, vocore-8M, x86-geode, x86-legacy<br>﻿</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://ffm.freifunk.net/2022/03/03/firmware-release-v4-8-0-stable-20220303/feed/</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+			<source url="https://ffm.freifunk.net">Freifunk Frankfurt am Main</source></item>
+</channel>
+</rss>

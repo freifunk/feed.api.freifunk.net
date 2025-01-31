@@ -1,21 +1,14 @@
-Community Map
-----------------------
-
-An Example: http://weimarnetz.de/ffmap/map.html
-=======
-FOSSASIA Feed Merger
+Freifunk Feed Merger
 ===========
-RSS blog feed merger for FOSSASIA API communities
-
-[![Join the chat at https://gitter.im/fossasia/api.fossasia.net](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/fossasia/api.fossasia.net?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+RSS blog feed merger for Freifunk API communities
 
 ## Setup
 
 * Clone the repo :
 
 	```sh
-	git clone https://github.com/fossasia/feed.api.fossasia.net.git
-	cd feed.api.fossasia.net
+	git clone https://github.com/freifunk/feed.api.freifunk.net.git
+	cd feed.api.freifunk.net
 	```
 
 * Create `config.json` from `config.json.sample`, and modify it as you need.
@@ -63,7 +56,7 @@ Based on the Hackerspaces API (http://hackerspaces.nl/spaceapi/) the idea of the
 
 The freifunk API is designed to collect metadata of communities in a decentral way and make it available to other users. It's not designated to be a freifunk node database or a directory of individual community firmware settings.
 
-[FOSSASIA API repo](https://github.com/fossasia/api.fossasia.net)
+[Freifunk API repo](https://github.com/freifunk/api.fossasia.net)
 
 ## Contribute
 
