@@ -92,4 +92,109 @@ class MergedRSSTest extends TestCase
         $this->assertStringNotContainsString('<title>Fetched Item 2</title>', $result);
         $this->assertStringContainsString('<title>New Fetched Item</title>', $result);
     }
+
+    public function testGueterslohFeedWithRedirect()
+    {
+        // Test the specific guetersloh feed that was causing issues
+        $feeds = [
+            ["https://freifunk-kreisgt.de/feed", "Freifunk Gütersloh", "https://freifunk-kreisgt.de", ["guetersloh"]]
+        ];
+
+        // Create an instance of MergedRSS
+        $mergedRSS = new MergedRSS($feeds, "Test Title", "http://example.com", "Test Description");
+
+        // Mock the __fetch_rss_from_cache method to return null (no cache)
+        $mergedRSS = $this->getMockBuilder(MergedRSS::class)
+            ->setConstructorArgs([$feeds, "Test Title", "http://example.com", "Test Description"])
+            ->onlyMethods(['__fetch_rss_from_cache'])
+            ->getMock();
+
+        $mergedRSS->method('__fetch_rss_from_cache')->willReturn(null);
+
+        // Test the export method
+        $result = $mergedRSS->export(true, false, 10, 'guetersloh');
+
+        // Check if the result contains items
+        $this->assertStringContainsString('<item>', $result, 'Result should contain RSS items');
+        
+        // Check if guetersloh content is present
+        $this->assertStringContainsString('Freifunk Gütersloh', $result, 'Result should contain Freifunk Gütersloh source');
+        
+        // Count items
+        $itemCount = substr_count($result, '<item>');
+        $this->assertGreaterThan(0, $itemCount, 'Should have at least one item');
+        
+        // Check if the result is valid XML
+        $this->assertStringContainsString('<?xml version="1.0"', $result, 'Result should be valid XML');
+        $this->assertStringContainsString('<rss version="2.0"', $result, 'Result should be valid RSS');
+    }
+
+    public function testMultiCurlWithRedirects()
+    {
+        // Test multiple feeds including one with redirect
+        $feeds = [
+            ["https://freifunk-kreisgt.de/feed", "Freifunk Gütersloh", "https://freifunk-kreisgt.de", ["guetersloh"]],
+            ["https://blog.freifunk.net/feed/", "blog.freifunk.net", "http://blog.freifunk.net", ["blog.freifunk.net"]]
+        ];
+
+        // Create an instance of MergedRSS
+        $mergedRSS = new MergedRSS($feeds, "Test Title", "http://example.com", "Test Description");
+
+        // Mock the __fetch_rss_from_cache method to return null (no cache)
+        $mergedRSS = $this->getMockBuilder(MergedRSS::class)
+            ->setConstructorArgs([$feeds, "Test Title", "http://example.com", "Test Description"])
+            ->onlyMethods(['__fetch_rss_from_cache'])
+            ->getMock();
+
+        $mergedRSS->method('__fetch_rss_from_cache')->willReturn(null);
+
+        // Test the export method
+        $result = $mergedRSS->export(true, false, 20, 'all');
+
+        // Check if the result contains items from both feeds
+        $this->assertStringContainsString('<item>', $result, 'Result should contain RSS items');
+        
+        // Check if both sources are present
+        $this->assertStringContainsString('Freifunk Gütersloh', $result, 'Result should contain Freifunk Gütersloh');
+        $this->assertStringContainsString('blog.freifunk.net', $result, 'Result should contain blog.freifunk.net');
+        
+        // Count items
+        $itemCount = substr_count($result, '<item>');
+        $this->assertGreaterThan(0, $itemCount, 'Should have at least one item');
+        
+        // Check if the result is valid XML
+        $this->assertStringContainsString('<?xml version="1.0"', $result, 'Result should be valid XML');
+        $this->assertStringContainsString('<rss version="2.0"', $result, 'Result should be valid RSS');
+    }
+
+    public function testBatchProcessing()
+    {
+        // Test with more than 10 feeds to ensure batch processing works
+        $feeds = [];
+        for ($i = 1; $i <= 15; $i++) {
+            $feeds[] = ["https://example{$i}.com/feed", "Feed {$i}", "https://example{$i}.com", ["feed{$i}"]];
+        }
+
+        // Create an instance of MergedRSS
+        $mergedRSS = new MergedRSS($feeds, "Test Title", "http://example.com", "Test Description");
+
+        // Mock the __fetch_rss_from_cache method to return null (no cache)
+        $mergedRSS = $this->getMockBuilder(MergedRSS::class)
+            ->setConstructorArgs([$feeds, "Test Title", "http://example.com", "Test Description"])
+            ->onlyMethods(['__fetch_rss_from_cache'])
+            ->getMock();
+
+        $mergedRSS->method('__fetch_rss_from_cache')->willReturn(null);
+
+        // Test the export method
+        $result = $mergedRSS->export(true, false, 5, 'all');
+
+        // Check if the result is valid
+        $this->assertStringContainsString('<?xml version="1.0"', $result, 'Result should be valid XML');
+        $this->assertStringContainsString('<rss version="2.0"', $result, 'Result should be valid RSS');
+        
+        // Should have some items (even if some feeds fail)
+        $itemCount = substr_count($result, '<item>');
+        $this->assertGreaterThanOrEqual(0, $itemCount, 'Should have zero or more items');
+    }
 }

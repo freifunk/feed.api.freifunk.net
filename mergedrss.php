@@ -193,87 +193,180 @@ class MergedRSS
 	// retrieves contents of multiple external RSS feeds in parallel
 	protected function __fetch_rss_from_urls($urls, $max_redirects = 5)
 	{
-		$multiHandle = curl_multi_init();
-		$curlHandles = [];
 		$results = [];
-		$redirects = [];
-
-		// Initialize cURL handles and add them to the multi handle
-		foreach ($urls as $url) {
-			$ch = curl_init();
-			curl_setopt($ch, CURLOPT_URL, $url);
-			curl_setopt($ch, CURLOPT_SSLVERSION, 6);
-			curl_setopt($ch, CURLOPT_USERAGENT, 'Mozilla/5.0');
-			curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
-			curl_setopt($ch, CURLOPT_TIMEOUT, $this->fetch_timeout);
-			curl_setopt($ch, CURLOPT_HEADER, true); // Header mit auslesen
-			curl_setopt($ch, CURLOPT_NOBODY, false); // Body mit auslesen
-			curl_setopt($ch, CURLOPT_FOLLOWLOCATION, false); // Wir folgen manuell
-
-			curl_multi_add_handle($multiHandle, $ch);
-			$curlHandles[$url] = $ch;
-			$redirects[$url] = 0; // Redirect-Zähler
+		$pending_urls = $urls;
+		$max_concurrent = 10; // Limit concurrent requests to avoid overwhelming servers
+		
+		while (!empty($pending_urls)) {
+			$batch = array_slice($pending_urls, 0, $max_concurrent);
+			$pending_urls = array_slice($pending_urls, $max_concurrent);
+			
+			$batch_results = $this->__fetch_batch_with_redirects($batch, $max_redirects);
+			$results = array_merge($results, $batch_results);
 		}
-
+		
+		return $results;
+	}
+	
+	// Fetch a batch of URLs in parallel with proper redirect handling
+	private function __fetch_batch_with_redirects($urls, $max_redirects = 5)
+	{
+		$multiHandle = curl_multi_init();
+		$batchState = $this->__initialize_batch_state($urls, $multiHandle);
+		
+		$active_handles = count($urls);
+		
+		while ($active_handles > 0) {
+			$this->__execute_multi_curl($multiHandle);
+			$active_handles = $this->__process_completed_requests($multiHandle, $batchState, $max_redirects, $active_handles);
+		}
+		
+		curl_multi_close($multiHandle);
+		return $batchState['results'];
+	}
+	
+	// Initialize the state for a batch of requests
+	private function __initialize_batch_state($urls, $multiHandle)
+	{
+		$curlHandles = [];
+		$url_to_original = [];
+		$redirect_count = [];
+		$results = [];
+		
+		foreach ($urls as $url) {
+			$ch = $this->__create_curl_handle($url);
+			curl_multi_add_handle($multiHandle, $ch);
+			
+			$curlHandles[$url] = $ch;
+			$url_to_original[$url] = $url;
+			$redirect_count[$url] = 0;
+		}
+		
+		return [
+			'curlHandles' => $curlHandles,
+			'url_to_original' => $url_to_original,
+			'redirect_count' => $redirect_count,
+			'results' => $results
+		];
+	}
+	
+	// Create a configured cURL handle
+	private function __create_curl_handle($url)
+	{
+		$ch = curl_init();
+		curl_setopt($ch, CURLOPT_URL, $url);
+		curl_setopt($ch, CURLOPT_SSLVERSION, 6);
+		curl_setopt($ch, CURLOPT_USERAGENT, 'Mozilla/5.0');
+		curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+		curl_setopt($ch, CURLOPT_TIMEOUT, $this->fetch_timeout);
+		curl_setopt($ch, CURLOPT_HEADER, true);
+		curl_setopt($ch, CURLOPT_NOBODY, false);
+		curl_setopt($ch, CURLOPT_FOLLOWLOCATION, false);
+		
+		return $ch;
+	}
+	
+	// Execute the multi-curl operations
+	private function __execute_multi_curl($multiHandle)
+	{
 		$running = null;
 		do {
 			curl_multi_exec($multiHandle, $running);
 			curl_multi_select($multiHandle);
 		} while ($running > 0);
-
-		// Verarbeite die Antworten
-		foreach ($curlHandles as $url => $ch) {
-			$response = curl_multi_getcontent($ch);
-			$header_size = curl_getinfo($ch, CURLINFO_HEADER_SIZE);
-			$header = substr($response, 0, $header_size);
-			$body = substr($response, $header_size);
-			$http_code = curl_getinfo($ch, CURLINFO_HTTP_CODE);
-			$effective_url = curl_getinfo($ch, CURLINFO_EFFECTIVE_URL);
-
-			// Prüfe auf Redirect (301, 302)
-			if (preg_match('/^Location:\s*(.*)$/mi', $header, $matches) && in_array($http_code, [301, 302])) {
-				$new_url = trim($matches[1]);
-				if ($redirects[$url] < $max_redirects) {
-					// Neuen Request für die weitergeleitete URL starten
-					$redirects[$url]++;
-					curl_multi_remove_handle($multiHandle, $ch);
-					curl_close($ch);
-
-					$ch = curl_init();
-					curl_setopt($ch, CURLOPT_URL, $new_url);
-					curl_setopt($ch, CURLOPT_SSLVERSION, 6);
-					curl_setopt($ch, CURLOPT_USERAGENT, 'Mozilla/5.0');
-					curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
-					curl_setopt($ch, CURLOPT_TIMEOUT, $this->fetch_timeout);
-					curl_setopt($ch, CURLOPT_HEADER, true);
-					curl_setopt($ch, CURLOPT_NOBODY, false);
-					curl_setopt($ch, CURLOPT_FOLLOWLOCATION, false);
-
-					curl_multi_add_handle($multiHandle, $ch);
-					$curlHandles[$new_url] = $ch;
-					$redirects[$new_url] = $redirects[$url];
-
-					unset($curlHandles[$url]); // Altes Handle entfernen
-					continue;
-				} else {
-					error_log("Max Redirects für $url erreicht.");
-				}
+	}
+	
+	// Process all completed requests
+	private function __process_completed_requests($multiHandle, &$batchState, $max_redirects, $active_handles)
+	{
+		while ($info = curl_multi_info_read($multiHandle)) {
+			if ($info['msg'] == CURLMSG_DONE) {
+				$active_handles = $this->__handle_completed_request($multiHandle, $batchState, $max_redirects, $info['handle'], $active_handles);
 			}
-
-			// Falls kein Redirect mehr: Parsen und abspeichern
-			if ($http_code >= 200 && $http_code < 300) {
-				$results[$url] = simplexml_load_string($body);
-			} else {
-				error_log("Fehler beim Laden von $url mit HTTP-Code: $http_code");
-				$results[$url] = false;
-			}
-
-			curl_multi_remove_handle($multiHandle, $ch);
-			curl_close($ch);
 		}
-
-		curl_multi_close($multiHandle);
-		return $results;
+		
+		return $active_handles;
+	}
+	
+	// Handle a single completed request
+	private function __handle_completed_request($multiHandle, &$batchState, $max_redirects, $ch, $active_handles)
+	{
+		$current_url = array_search($ch, $batchState['curlHandles']);
+		$original_url = $batchState['url_to_original'][$current_url];
+		
+		$response = curl_multi_getcontent($ch);
+		$header_size = curl_getinfo($ch, CURLINFO_HEADER_SIZE);
+		$header = substr($response, 0, $header_size);
+		$body = substr($response, $header_size);
+		$http_code = curl_getinfo($ch, CURLINFO_HTTP_CODE);
+		
+		if ($this->__is_redirect($http_code, $header)) {
+			return $this->__handle_redirect($multiHandle, $batchState, $max_redirects, $ch, $current_url, $original_url, $header, $active_handles);
+		} else {
+			return $this->__handle_final_response($multiHandle, $batchState, $ch, $current_url, $original_url, $http_code, $body, $active_handles);
+		}
+	}
+	
+	// Check if response is a redirect
+	private function __is_redirect($http_code, $header)
+	{
+		return in_array($http_code, [301, 302]) && preg_match('/^Location:\s*(.*)$/mi', $header, $matches);
+	}
+	
+	// Handle redirect response
+	private function __handle_redirect($multiHandle, &$batchState, $max_redirects, $ch, $current_url, $original_url, $header, $active_handles)
+	{
+		preg_match('/^Location:\s*(.*)$/mi', $header, $matches);
+		$new_url = trim($matches[1]);
+		
+		if ($batchState['redirect_count'][$original_url] < $max_redirects) {
+			$batchState['redirect_count'][$original_url]++;
+			$this->__replace_handle_with_redirect($multiHandle, $batchState, $ch, $current_url, $new_url, $original_url);
+			return $active_handles; // Don't decrease active_handles
+		} else {
+			error_log("Max Redirects für $original_url erreicht.");
+			$batchState['results'][$original_url] = false;
+			$this->__cleanup_handle($multiHandle, $batchState, $ch, $current_url);
+			return $active_handles - 1;
+		}
+	}
+	
+	// Replace handle with redirected URL
+	private function __replace_handle_with_redirect($multiHandle, &$batchState, $ch, $current_url, $new_url, $original_url)
+	{
+		// Remove old handle
+		curl_multi_remove_handle($multiHandle, $ch);
+		curl_close($ch);
+		unset($batchState['curlHandles'][$current_url]);
+		
+		// Create new handle for redirected URL
+		$ch = $this->__create_curl_handle($new_url);
+		curl_multi_add_handle($multiHandle, $ch);
+		
+		$batchState['curlHandles'][$new_url] = $ch;
+		$batchState['url_to_original'][$new_url] = $original_url;
+	}
+	
+	// Handle final (non-redirect) response
+	private function __handle_final_response($multiHandle, &$batchState, $ch, $current_url, $original_url, $http_code, $body, $active_handles)
+	{
+		if ($http_code >= 200 && $http_code < 300) {
+			$batchState['results'][$original_url] = simplexml_load_string($body);
+		} else {
+			error_log("Fehler beim Laden von $original_url mit HTTP-Code: $http_code");
+			$batchState['results'][$original_url] = false;
+		}
+		
+		$this->__cleanup_handle($multiHandle, $batchState, $ch, $current_url);
+		return $active_handles - 1;
+	}
+	
+	// Clean up a cURL handle
+	private function __cleanup_handle($multiHandle, &$batchState, $ch, $current_url)
+	{
+		curl_multi_remove_handle($multiHandle, $ch);
+		curl_close($ch);
+		unset($batchState['curlHandles'][$current_url]);
 	}
 
 
